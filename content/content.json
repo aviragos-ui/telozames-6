@@ -1,11 +1,12 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "title": "Телозамес · 6 лет",
   "idea": "Сначала было движение. Потом вокруг него появился целый мир.",
   "anniversary": 6,
   "places": [
     "Вишенки",
     "Алтай",
+    "Гоа",
     "Петербург"
   ],
   "stories": [
@@ -100,10 +101,51 @@
       "id": "movement",
       "title": "Сначала было движение",
       "type": "hero",
-      "media": [],
+      "media": [
+        {
+          "duration": 15,
+          "height": 900,
+          "id": "nastya-001",
+          "poster": "media/nastya-001.jpg",
+          "type": "video",
+          "web_source": "media/nastya-001-original.mp4",
+          "width": 720,
+          "source": "media/nastya-001-original.mp4"
+        },
+        {
+          "duration": 22.28921768707483,
+          "height": 900,
+          "id": "nastya-002",
+          "poster": "media/nastya-002.jpg",
+          "type": "video",
+          "web_source": "media/nastya-002-original.mp4",
+          "width": 720,
+          "source": "media/nastya-002-original.mp4"
+        },
+        {
+          "duration": 60.09121768707483,
+          "height": 900,
+          "id": "nastya-003",
+          "poster": "media/nastya-003.jpg",
+          "type": "video",
+          "web_source": "media/nastya-003-original.mp4",
+          "width": 720,
+          "source": "media/nastya-003-original.mp4"
+        },
+        {
+          "duration": 56.352,
+          "height": 1000,
+          "id": "nastya-004",
+          "poster": "media/nastya-004.jpg",
+          "type": "video",
+          "web_source": "media/nastya-004-original.mp4",
+          "width": 562,
+          "source": "media/nastya-004-original.mp4"
+        }
+      ],
       "fallback_archive_id": null,
       "intro": "До того, как появился Телозамес, было просто тело. Музыка. Камера. И желание двигаться.",
-      "early_experiments_status": "awaiting_assets"
+      "early_experiments_status": "provided_in_nastya_folder"
     },
     {
       "id": "people",
@@ -138,7 +180,19 @@
         "archive-053",
         "archive-017",
         "archive-063"
-      ]
+      ],
+      "collections": {
+        "ritual": [
+          "archive-106",
+          "archive-107",
+          "archive-109"
+        ],
+        "after": [
+          "archive-093",
+          "archive-094",
+          "archive-095"
+        ]
+      }
     },
     {
       "id": "places",
@@ -146,7 +200,18 @@
       "type": "film",
       "place_names_source": "verified_archive_captions",
       "presentation": "single_film_with_place_captions",
-      "photo_geography": "verified_chat_captions_only"
+      "photo_geography": "verified_chat_captions_only",
+      "featured_collection": [
+        "archive-096",
+        "archive-097",
+        "archive-098",
+        "archive-099",
+        "archive-100",
+        "archive-101",
+        "archive-102",
+        "archive-103",
+        "archive-104"
+      ]
     },
     {
       "id": "final",
@@ -154,5 +219,82 @@
       "type": "final",
       "closing_quote": "танцуй так, будто на тебя смотрит любящий взгляд Насти"
     }
-  ]
+  ],
+  "dance": [
+    {
+      "duration": 88.535,
+      "height": 1000,
+      "id": "dance-001",
+      "poster": "media/dance-001.jpg",
+      "type": "video",
+      "web_source": "media/dance-001-web-v2.mp4",
+      "width": 562,
+      "caption": "2021",
+      "source": "media/dance-001-web-v2.mp4"
+    },
+    {
+      "duration": 28.163,
+      "height": 1000,
+      "id": "dance-002",
+      "poster": "media/dance-002.jpg",
+      "type": "video",
+      "web_source": "media/dance-002-original.mp4",
+      "width": 562,
+      "caption": "2021 · ещё один танец",
+      "source": "media/dance-002-original.mp4"
+    },
+    {
+      "duration": 42.034,
+      "height": 1000,
+      "id": "dance-003",
+      "poster": "media/dance-003.jpg",
+      "type": "video",
+      "web_source": "media/dance-003-original.mp4",
+      "width": 562,
+      "caption": "2022",
+      "source": "media/dance-003-original.mp4"
+    },
+    {
+      "duration": 34.99,
+      "height": 1000,
+      "id": "dance-004",
+      "poster": "media/dance-004.jpg",
+      "type": "video",
+      "web_source": "media/dance-004-original.mp4",
+      "width": 562,
+      "caption": "2023",
+      "source": "media/dance-004-original.mp4"
+    },
+    {
+      "duration": 58.003,
+      "height": 1000,
+      "id": "dance-005",
+      "poster": "media/dance-005.jpg",
+      "type": "video",
+      "web_source": "media/dance-005-web-v2.mp4",
+      "width": 562,
+      "caption": "2025",
+      "source": "media/dance-005-web-v2.mp4"
+    },
+    {
+      "duration": 83.15,
+      "height": 1000,
+      "id": "dance-006",
+      "poster": "media/dance-006.jpg",
+      "type": "video",
+      "web_source": "media/dance-006-web-v2.mp4",
+      "width": 562,
+      "caption": "2026",
+      "source": "media/dance-006-web-v2.mp4"
+    }
+  ],
+  "portrait": {
+    "height": 2586,
+    "id": "portrait-001",
+    "poster": "media/portrait-001.jpg",
+    "type": "image",
+    "width": 2068,
+    "web_source": "media/portrait-001.jpg",
+    "source": "media/portrait-001.jpg"
+  }
 }

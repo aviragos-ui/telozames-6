@@ -1224,6 +1224,394 @@
     "source": "media/archive-064.jpg"
   },
   {
+    "duration": 32.833333333333336,
+    "height": 1000,
+    "id": "archive-093",
+    "poster": "media/archive-093.jpg",
+    "type": "video",
+    "web_source": "media/archive-093-web-v2.mp4",
+    "width": 562,
+    "categories": [
+      "people"
+    ],
+    "caption": "Ещё немного побыть вместе",
+    "place": null,
+    "visible": true,
+    "collection": "after",
+    "category_labels": [
+      "people"
+    ],
+    "category": "people",
+    "source": "media/archive-093-web-v2.mp4"
+  },
+  {
+    "duration": 20.31501133786848,
+    "height": 1000,
+    "id": "archive-094",
+    "poster": "media/archive-094.jpg",
+    "type": "video",
+    "web_source": "media/archive-094-web-v2.mp4",
+    "width": 562,
+    "categories": [
+      "people"
+    ],
+    "caption": "Лица после танца",
+    "place": null,
+    "visible": true,
+    "collection": "after",
+    "category_labels": [
+      "people"
+    ],
+    "category": "people",
+    "source": "media/archive-094-web-v2.mp4"
+  },
+  {
+    "duration": 31.805,
+    "height": 1000,
+    "id": "archive-095",
+    "poster": "media/archive-095.jpg",
+    "type": "video",
+    "web_source": "media/archive-095-web-v2.mp4",
+    "width": 562,
+    "categories": [
+      "people"
+    ],
+    "caption": "Когда все в одном кадре",
+    "place": null,
+    "visible": true,
+    "collection": "after",
+    "category_labels": [
+      "people"
+    ],
+    "category": "people",
+    "source": "media/archive-095-web-v2.mp4"
+  },
+  {
+    "duration": 20.188333333333333,
+    "height": 562,
+    "id": "archive-096",
+    "poster": "media/archive-096.jpg",
+    "type": "video",
+    "web_source": "media/archive-096-web-v2.mp4",
+    "width": 1000,
+    "categories": [
+      "movement"
+    ],
+    "caption": "Утро. Пальмы. Движение",
+    "place": "Гоа",
+    "visible": true,
+    "collection": "goa",
+    "category_labels": [
+      "movement"
+    ],
+    "category": "movement",
+    "source": "media/archive-096-web-v2.mp4"
+  },
+  {
+    "height": 3520,
+    "id": "archive-097",
+    "poster": "media/archive-097.jpg",
+    "type": "image",
+    "width": 1980,
+    "web_source": "media/archive-097.jpg",
+    "categories": [
+      "people"
+    ],
+    "caption": "Чай у моря",
+    "place": "Гоа",
+    "visible": true,
+    "collection": "goa",
+    "category_labels": [
+      "people"
+    ],
+    "category": "people",
+    "source": "media/archive-097.jpg"
+  },
+  {
+    "height": 5924,
+    "id": "archive-098",
+    "poster": "media/archive-098.jpg",
+    "type": "image",
+    "width": 4442,
+    "web_source": "media/archive-098.jpg",
+    "categories": [
+      "atmosphere"
+    ],
+    "caption": "Собраться в круг",
+    "place": "Гоа",
+    "visible": true,
+    "collection": "goa",
+    "category_labels": [
+      "atmosphere"
+    ],
+    "category": "atmosphere",
+    "source": "media/archive-098.jpg"
+  },
+  {
+    "duration": 12.731666666666667,
+    "height": 562,
+    "id": "archive-099",
+    "poster": "media/archive-099.jpg",
+    "type": "video",
+    "web_source": "media/archive-099-web-v2.mp4",
+    "width": 1000,
+    "categories": [
+      "places"
+    ],
+    "caption": "Вместе к морю",
+    "place": "Гоа",
+    "visible": true,
+    "collection": "goa",
+    "category_labels": [
+      "places"
+    ],
+    "category": "places",
+    "source": "media/archive-099-web-v2.mp4"
+  },
+  {
+    "height": 8064,
+    "id": "archive-100",
+    "poster": "media/archive-100.jpg",
+    "type": "image",
+    "width": 6048,
+    "web_source": "media/archive-100.jpg",
+    "categories": [
+      "atmosphere"
+    ],
+    "caption": "Чашки по кругу",
+    "place": "Гоа",
+    "visible": true,
+    "collection": "goa",
+    "category_labels": [
+      "atmosphere"
+    ],
+    "category": "atmosphere",
+    "source": "media/archive-100.jpg"
+  },
+  {
+    "height": 8064,
+    "id": "archive-101",
+    "poster": "media/archive-101.jpg",
+    "type": "image",
+    "width": 6048,
+    "web_source": "media/archive-101.jpg",
+    "categories": [
+      "people"
+    ],
+    "caption": "Разговоры за общим столом",
+    "place": "Гоа",
+    "visible": true,
+    "collection": "goa",
+    "category_labels": [
+      "people"
+    ],
+    "category": "people",
+    "source": "media/archive-101.jpg"
+  },
+  {
+    "duration": 5.601666666666667,
+    "height": 562,
+    "id": "archive-102",
+    "poster": "media/archive-102.jpg",
+    "type": "video",
+    "web_source": "media/archive-102-web-v2.mp4",
+    "width": 1000,
+    "categories": [
+      "movement"
+    ],
+    "caption": "Танцевать до заката",
+    "place": "Гоа",
+    "visible": true,
+    "collection": "goa",
+    "category_labels": [
+      "movement"
+    ],
+    "category": "movement",
+    "source": "media/archive-102-web-v2.mp4"
+  },
+  {
+    "duration": 18.023333333333333,
+    "height": 562,
+    "id": "archive-103",
+    "poster": "media/archive-103.jpg",
+    "type": "video",
+    "web_source": "media/archive-103-web-v2.mp4",
+    "width": 1000,
+    "categories": [
+      "people"
+    ],
+    "caption": "Обернуться к своим",
+    "place": "Гоа",
+    "visible": true,
+    "collection": "goa",
+    "category_labels": [
+      "people"
+    ],
+    "category": "people",
+    "source": "media/archive-103-web-v2.mp4"
+  },
+  {
+    "duration": 56.44166666666667,
+    "height": 1000,
+    "id": "archive-104",
+    "poster": "media/archive-104.jpg",
+    "type": "video",
+    "web_source": "media/archive-104-web-v2.mp4",
+    "width": 562,
+    "categories": [
+      "people"
+    ],
+    "caption": "И ещё одно объятие",
+    "place": "Гоа",
+    "visible": true,
+    "collection": "goa",
+    "category_labels": [
+      "people"
+    ],
+    "category": "people",
+    "source": "media/archive-104-web-v2.mp4"
+  },
+  {
+    "height": 854,
+    "id": "archive-105",
+    "poster": "media/archive-105.jpg",
+    "type": "image",
+    "width": 1280,
+    "web_source": "media/archive-105.jpg",
+    "categories": [
+      "people"
+    ],
+    "caption": "Обнять и никуда не спешить",
+    "place": null,
+    "visible": true,
+    "collection": "film",
+    "category_labels": [
+      "people"
+    ],
+    "category": "people",
+    "source": "media/archive-105.jpg"
+  },
+  {
+    "height": 3456,
+    "id": "archive-106",
+    "poster": "media/archive-106.jpg",
+    "type": "image",
+    "width": 4608,
+    "web_source": "media/archive-106.jpg",
+    "categories": [
+      "atmosphere"
+    ],
+    "caption": "Венки своими руками",
+    "place": null,
+    "visible": true,
+    "collection": "ritual",
+    "category_labels": [
+      "atmosphere"
+    ],
+    "category": "atmosphere",
+    "source": "media/archive-106.jpg"
+  },
+  {
+    "height": 4608,
+    "id": "archive-107",
+    "poster": "media/archive-107.jpg",
+    "type": "image",
+    "width": 3456,
+    "web_source": "media/archive-107.jpg",
+    "categories": [
+      "atmosphere"
+    ],
+    "caption": "Подарок от сердца",
+    "place": null,
+    "visible": true,
+    "collection": "ritual",
+    "category_labels": [
+      "atmosphere"
+    ],
+    "category": "atmosphere",
+    "source": "media/archive-107.jpg"
+  },
+  {
+    "height": 2048,
+    "id": "archive-108",
+    "poster": "media/archive-108.jpg",
+    "type": "image",
+    "width": 3089,
+    "web_source": "media/archive-108.jpg",
+    "categories": [
+      "people"
+    ],
+    "caption": "Все поместились",
+    "place": null,
+    "visible": true,
+    "collection": "film",
+    "category_labels": [
+      "people"
+    ],
+    "category": "people",
+    "source": "media/archive-108.jpg"
+  },
+  {
+    "height": 4032,
+    "id": "archive-109",
+    "poster": "media/archive-109.jpg",
+    "type": "image",
+    "width": 3024,
+    "web_source": "media/archive-109.jpg",
+    "categories": [
+      "atmosphere"
+    ],
+    "caption": "Свечи, маленькие сокровища и наш круг",
+    "place": null,
+    "visible": true,
+    "collection": "ritual",
+    "category_labels": [
+      "atmosphere"
+    ],
+    "category": "atmosphere",
+    "source": "media/archive-109.jpg"
+  },
+  {
+    "height": 1280,
+    "id": "archive-110",
+    "poster": "media/archive-110.jpg",
+    "type": "image",
+    "width": 853,
+    "web_source": "media/archive-110.jpg",
+    "categories": [
+      "people"
+    ],
+    "caption": "Вот так выглядит близость",
+    "place": null,
+    "visible": true,
+    "collection": "film",
+    "category_labels": [
+      "people"
+    ],
+    "category": "people",
+    "source": "media/archive-110.jpg"
+  },
+  {
+    "height": 1280,
+    "id": "archive-111",
+    "poster": "media/archive-111.jpg",
+    "type": "image",
+    "width": 849,
+    "web_source": "media/archive-111.jpg",
+    "categories": [
+      "people"
+    ],
+    "caption": "Загадывай",
+    "place": null,
+    "visible": true,
+    "collection": "film",
+    "category_labels": [
+      "people"
+    ],
+    "category": "people",
+    "source": "media/archive-111.jpg"
+  },
+  {
     "duration": 33.96666666666667,
     "height": 848,
     "id": "archive-065",
