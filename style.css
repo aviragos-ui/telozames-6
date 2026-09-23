@@ -63,3 +63,15 @@ dialog.viewer-circle::backdrop{background:#080c20ba;backdrop-filter:blur(15px);-
 /* WebKit needs an explicit inset: intrinsic video dimensions must not stretch the circle. */
 #viewer.viewer-circle .circle-stage>video{position:absolute;inset:7px;width:calc(100% - 14px);height:calc(100% - 14px)}
 @media(max-width:600px){#viewer.viewer-circle .circle-stage>video{inset:5px;width:calc(100% - 10px);height:calc(100% - 10px)}}
+
+/* Editorial pass: readable type, consistent quotation marks and quiet navigation. */
+.hero h1 em{letter-spacing:-.045em}
+.quote-card blockquote:before,.quote-card blockquote:after{content:none}
+.quote-card blockquote{line-height:1.22;letter-spacing:-.025em;overflow-wrap:break-word}
+.person-name{font-size:14px;line-height:1.4}.person-meta{font-size:11px;opacity:.72}
+.quote-theme{opacity:.8}.film-hint{opacity:.8}
+.skip{top:12px;left:12px;transform:translateY(calc(-100% - 24px));clip-path:inset(50%);pointer-events:none}
+.skip:focus-visible{top:12px;transform:none;clip-path:none;pointer-events:auto}
+.viewer-head h2{overflow-wrap:anywhere}
+@media(max-width:600px){.hero h1{font-size:14.4vw}.person-name{font-size:12px}.person-meta{font-size:11px}.quote-card blockquote{font-size:27px}.quote-card:first-child blockquote{font-size:34px}.movie-memory blockquote{font-size:24px;line-height:1.12}.film-hint{font-size:13px}.circle-actions>span{display:none}.circle-actions{justify-content:space-between}.circle-sound{font-size:12px;padding:0 15px}}
+@media(max-width:360px){.movie-memory{grid-template-columns:100px 1fr;gap:18px}.movie-memory blockquote{font-size:22px}.inside h2{font-size:41px}}

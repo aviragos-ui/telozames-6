@@ -3,6 +3,8 @@
  const D=window.TELO_DATA;if(!D)return;
  const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const label=s=>s.charAt(0).toLocaleUpperCase('ru')+s.slice(1);
+ const quoted=s=>{const text=String(s).trim();const period=text.endsWith('.');return '«'+esc((period?text.slice(0,-1):text).replace(/«/g,'„').replace(/»/g,'“'))+'»'+(period?'.':'');};
  const url=s=>String(s).split('/').map(encodeURIComponent).join('/');
  const starMarkup='<svg class="vector-mark" viewBox="0 0 100 100" fill="none" aria-hidden="true" focusable="false"><path d="M50 7v86M7 50h86M20 20l60 60M20 80l60-60" stroke="currentColor" stroke-width="13"/></svg>';
  const reduced=matchMedia('(prefers-reduced-motion: reduce)');
@@ -20,7 +22,7 @@
  }
  function openNote(q,title){
   if(!q)return;
-  previousFocus=document.activeElement;pauseAll();viewer.classList.remove('viewer-circle');body.replaceChildren();$('#viewer-title').textContent=title||('Записка'+(q.author?' · '+q.author:''));$('#viewer-error').textContent='';
+  previousFocus=document.activeElement;pauseAll();viewer.classList.remove('viewer-circle');body.replaceChildren();$('#viewer-title').textContent=title||('Из записки'+(q.author?' · '+q.author:''));$('#viewer-error').textContent='';
   const note=document.createElement('div');note.className='note-text';note.textContent=q.text||q.excerpt;body.append(note);viewer.showModal();document.body.style.overflow='hidden';
  }
  const pauseAll=()=>$$('video').forEach(v=>v.pause());
@@ -31,18 +33,18 @@
   const node=document.createElement(isVideo?'video':'img');
   node.src=url(isVideo?(item.web_source||item.source):item.source);if(!isVideo)node.alt=title;
   if(isVideo){node.controls=!isCircle;node.playsInline=true;node.preload='metadata';if(item.poster)node.poster=url(item.poster);}
-  node.addEventListener('error',()=>{$('#viewer-error').textContent='Не получилось открыть файл в браузере. ';const a=document.createElement('a');a.href=url(item.source);a.textContent='Открыть оригинал';a.target='_blank';a.rel='noopener';$('#viewer-error').append(a);});
+  node.addEventListener('error',()=>{$('#viewer-error').textContent='Не получилось открыть файл в браузере. ';const a=document.createElement('a');a.href=url(item.source);a.textContent=isVideo?'Открыть видео отдельно':'Открыть фото отдельно';a.target='_blank';a.rel='noopener';$('#viewer-error').append(a);});
   if(isCircle){
    const stage=document.createElement('div');stage.className='circle-stage';stage.append(node);body.append(stage);
    const controls=document.createElement('div');controls.className='circle-controls';
-   controls.innerHTML='<div class="circle-timeline"><input type="range" min="0" max="1" step="0.1" value="0" aria-label="Перемотка поздравления"><span class="circle-time" aria-live="off">0:00 / 0:00</span></div><div class="circle-actions"><button class="circle-toggle" aria-label="Пауза">Ⅱ</button><span>Голос для тебя</span><button class="circle-sound" aria-label="Выключить звук" aria-pressed="true">Звук вкл.</button></div>';
+   controls.innerHTML='<div class="circle-timeline"><input type="range" min="0" max="1" step="0.1" value="0" aria-label="Перемотка поздравления"><span class="circle-time" aria-live="off">0:00 / 0:00</span></div><div class="circle-actions"><button class="circle-toggle" aria-label="Пауза">Ⅱ</button><span>Голос для тебя</span><button class="circle-sound" aria-label="Выключить звук" aria-pressed="true">Выключить звук</button></div>';
    body.append(controls);
    const toggle=controls.querySelector('.circle-toggle'),sound=controls.querySelector('.circle-sound'),seek=controls.querySelector('input'),time=controls.querySelector('.circle-time');
    const clock=n=>duration(Number.isFinite(n)?n:0);
    function update(){const length=Number.isFinite(node.duration)?node.duration:0;seek.max=String(length||1);seek.value=String(node.currentTime);seek.setAttribute('aria-valuetext',clock(node.currentTime)+' из '+clock(length));time.textContent=clock(node.currentTime)+' / '+clock(length);toggle.textContent=node.paused?'▶':'Ⅱ';toggle.setAttribute('aria-label',node.paused?'Продолжить поздравление':'Пауза');}
    ['timeupdate','durationchange','play','pause','ended'].forEach(event=>node.addEventListener(event,update));
    toggle.onclick=()=>{if(node.paused)node.play().catch(()=>{$('#viewer-error').textContent='Не удалось начать воспроизведение. Попробуй ещё раз.';});else node.pause();};
-   sound.onclick=()=>{node.muted=!node.muted;sound.textContent=node.muted?'Звук выкл.':'Звук вкл.';sound.setAttribute('aria-label',node.muted?'Включить звук':'Выключить звук');sound.setAttribute('aria-pressed',String(!node.muted));};
+   sound.onclick=()=>{node.muted=!node.muted;sound.textContent=node.muted?'Включить звук':'Выключить звук';sound.setAttribute('aria-label',node.muted?'Включить звук':'Выключить звук');sound.setAttribute('aria-pressed',String(!node.muted));};
    seek.oninput=()=>{node.currentTime=Number(seek.value);update();};update();
   }else body.append(node);
   viewer.showModal();document.body.style.overflow='hidden';
@@ -62,10 +64,10 @@
   if(early.length>1){const strip=document.createElement('div');strip.className='early-strip';early.slice(1).forEach((v,i)=>{const b=document.createElement('button');b.textContent=`Ещё движение ${i+2} ↗`;b.onclick=()=>open(v,'Сначала было движение');strip.append(b);});$('#hero-media').append(strip);}
  }else{
   $('#hero-media').innerHTML='<div class="movement-object" aria-hidden="true"><div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div><span class="movement-star"><svg class="vector-mark" viewBox="0 0 100 100" fill="none" aria-hidden="true" focusable="false"><path d="M50 7v86M7 50h86M20 20l60 60M20 80l60-60" stroke="currentColor" stroke-width="13"/></svg></span><span class="orbit-dot"></span></div>';
-  $('.handwritten').textContent='тело · музыка · камера';
+  $('.handwritten').textContent='Тело · музыка · камера';
  }
  function duration(n){return `${Math.floor(n/60)}:${String(Math.floor(n%60)).padStart(2,'0')}`;}
- $('#circles').innerHTML=D.people.map((p,i)=>`<article class="person"><button class="circle" data-person="${esc(p.id)}" aria-label="Слушать: ${esc(p.name)}${p.part?', часть '+p.part:''}"><img src="${url(p.poster)}" alt="${esc(p.name)}" loading="lazy" width="240" height="240"><video muted loop playsinline preload="none" data-preview="${i}" tabindex="-1" aria-hidden="true"></video><span class="circle-play" aria-hidden="true">▶</span></button><span class="person-name">${esc(p.name)}</span><span class="person-meta">${p.part?'часть '+p.part+' · ':''}${duration(p.duration)}</span></article>`).join('');
+ $('#circles').innerHTML=D.people.map((p,i)=>`<article class="person"><button class="circle" data-person="${esc(p.id)}" aria-label="Слушать: ${esc(p.name)}${p.part?', часть '+p.part:''}"><img src="${url(p.poster)}" alt="${esc(p.name)}" loading="lazy" width="240" height="240"><video muted loop playsinline preload="none" data-preview="${i}" tabindex="-1" aria-hidden="true"></video><span class="circle-play" aria-hidden="true">▶</span></button><span class="person-name">${esc(p.name)}</span><span class="person-meta">${p.part?'Часть '+p.part+' · ':''}${duration(p.duration)}</span></article>`).join('');
  const previews=$$('[data-preview]');let activePreviews=0;
  async function preview(v){
   if(reduced.matches||navigator.connection?.saveData||matchMedia('(pointer: coarse)').matches||viewer.open||document.hidden||activePreviews>=2||previews.filter(p=>!p.paused).length>=2||!v.paused)return;
@@ -82,11 +84,11 @@
  const quotes=D.quotes.filter(q=>q.section!=='inside').sort((a,b)=>(order.includes(a.id)?order.indexOf(a.id):99)-(order.includes(b.id)?order.indexOf(b.id):99));
  function renderQuotes(){
   const filtered=quotes.filter(q=>selectedTheme==='Все'||q.themes.includes(selectedTheme));const shown=expanded?filtered:filtered.slice(0,6);
-  $('#quotes').innerHTML=shown.map(q=>`<article class="quote-card"><span class="quote-theme">${esc(q.themes[0])}</span><blockquote>${esc(q.excerpt)}</blockquote><p class="quote-by">${esc(q.author||'Из нашего чата')}</p></article>`).join('');
-  $('#more-quotes').hidden=filtered.length<=6;$('#more-quotes').innerHTML=expanded?'Свернуть подборку ↑':'Ещё слова, которые остались с нами ↓';
+  $('#quotes').innerHTML=shown.map(q=>`<article class="quote-card"><span class="quote-theme">${esc(q.themes[0])}</span><blockquote>${quoted(q.excerpt)}</blockquote><p class="quote-by">${esc(q.author||'Из нашего чата')}</p></article>`).join('');
+  $('#more-quotes').hidden=filtered.length<=6;$('#more-quotes').innerHTML=expanded?'Свернуть ↑':'Ещё слова ↓';
   $$('[data-theme]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.theme===selectedTheme)));
  }
- $('#quote-filters').innerHTML=topics.map(t=>`<button data-theme="${esc(t)}" aria-pressed="${t==='Все'}">${esc(t)}</button>`).join('');
+ $('#quote-filters').innerHTML=topics.map(t=>`<button data-theme="${esc(t)}" aria-pressed="${t==='Все'}">${esc(label(t))}</button>`).join('');
  $$('[data-theme]').forEach(b=>b.onclick=()=>{selectedTheme=b.dataset.theme;expanded=false;renderQuotes();});
  $('#more-quotes').onclick=()=>{expanded=!expanded;renderQuotes();};renderQuotes();
  document.addEventListener('click',e=>{const b=e.target.closest('[data-quote]');if(!b)return;const q=D.quotes.find(q=>q.id===b.dataset.quote);if(q)openNote(q);});
@@ -95,7 +97,7 @@
  function nextCat(){catIndex=(catIndex+1)%cats.length;renderCat();}
  $('#cat').onclick=nextCat;$('#next-cat').onclick=nextCat;renderCat();
  $('#cat-video').onclick=()=>open(archive.get('archive-015'),'Тот самый кот на АЗС');
- const gift=archive.get('archive-063');$('#artifact').innerHTML=`<button class="media-button" aria-label="Открыть Изобилие Вишенок"><img loading="lazy" src="${url(gift.poster)}" alt="Упаковка с надписью Изобилие Вишенок"></button><p>Изобилие Вишенок.<br>Тоже часть истории.</p>`;$('#artifact button').onclick=()=>open(gift,gift.caption);
+ const gift=archive.get('archive-063');$('#artifact').innerHTML=`<button class="media-button" aria-label="Открыть Изобилие Вишенок"><img loading="lazy" src="${url(gift.poster)}" alt="Упаковка с надписью Изобилие Вишенок"></button><p>«Изобилие Вишенок»<br>Тоже часть истории.</p>`;$('#artifact button').onclick=()=>open(gift,gift.caption);
  const service=archive.get('archive-051');$('#self-service').innerHTML=`<img loading="lazy" src="${url(service.poster)}" alt="Извините, у нас самообслуживание"><span>Извини-и-ите,<br>у нас самообслуживание.</span>`;$('#self-service').onclick=()=>open(service,'Читать грубым голосом');
  const aerobics=archive.get('archive-053');$('#aerobics').innerHTML=`<img loading="lazy" src="${url(aerobics.poster)}" alt="Аэробика на Алтае: ноги выше головы"><span>Мама называла это<br>аэробикой.</span>`;$('#aerobics').onclick=()=>open(aerobics,'«Аэробика на Алтае» · Юля Муха');
  const movie=archive.get('archive-073');$('#movie').innerHTML=`<img loading="lazy" src="${url(movie.poster)}" alt="Видео перед Телозамесом в Петербурге"><span class="movie-play">▶</span>`;$('#movie').onclick=()=>open(movie,'«Когда-нибудь я сниму фильм о своей жизни»');
@@ -118,5 +120,4 @@
  $('#film').addEventListener('scroll',updateArrows,{passive:true});window.addEventListener('resize',updateArrows);renderFilm();
  new ResizeObserver(updateArrows).observe($('#film'));
  $('#final-faces').innerHTML=D.people.map(p=>`<img loading="lazy" src="${url(p.poster)}" alt="">`).join('');
- $('#closing-source').onclick=()=>openNote(D.quotes.find(q=>q.id==='quotes-032'),'Про любящий взгляд Насти');
 })();
