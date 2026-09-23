@@ -1,0 +1,122 @@
+'use strict';
+(() => {
+ const D=window.TELO_DATA;if(!D)return;
+ const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const url=s=>String(s).split('/').map(encodeURIComponent).join('/');
+ const starMarkup='<svg class="vector-mark" viewBox="0 0 100 100" fill="none" aria-hidden="true" focusable="false"><path d="M50 7v86M7 50h86M20 20l60 60M20 80l60-60" stroke="currentColor" stroke-width="13"/></svg>';
+ const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+ const archive=new Map(D.archive.map(a=>[a.id,a]));
+ const viewer=$('#viewer'),body=$('#viewer-body');let previousFocus=null;
+ const intro=$('#letter-intro'),postcard=$('#postcard');
+ // Direct chapter links stay usable. Reloading the main address begins with the letter.
+ if(!location.hash){
+  intro.hidden=false;postcard.hidden=true;
+  $('#open-letter').onclick=()=>{
+   if(intro.classList.contains('opening'))return;
+   intro.classList.add('opening');$('#open-letter').setAttribute('aria-disabled','true');
+   setTimeout(()=>{intro.hidden=true;postcard.hidden=false;window.scrollTo(0,0);const h=$('#hero-title');h.tabIndex=-1;h.focus({preventScroll:true});},reduced.matches?0:1050);
+  };
+ }
+ function openNote(q,title){
+  if(!q)return;
+  previousFocus=document.activeElement;pauseAll();viewer.classList.remove('viewer-circle');body.replaceChildren();$('#viewer-title').textContent=title||('Записка'+(q.author?' · '+q.author:''));$('#viewer-error').textContent='';
+  const note=document.createElement('div');note.className='note-text';note.textContent=q.text||q.excerpt;body.append(note);viewer.showModal();document.body.style.overflow='hidden';
+ }
+ const pauseAll=()=>$$('video').forEach(v=>v.pause());
+ function open(item,title,type){
+  previousFocus=document.activeElement;pauseAll();body.replaceChildren();$('#viewer-title').textContent=title;$('#viewer-error').textContent='';
+  const isCircle=item.type==='video_circle';viewer.classList.toggle('viewer-circle',isCircle);
+  const isVideo=type==='video'||item.type==='video'||isCircle;
+  const node=document.createElement(isVideo?'video':'img');
+  node.src=url(isVideo?(item.web_source||item.source):item.source);if(!isVideo)node.alt=title;
+  if(isVideo){node.controls=!isCircle;node.playsInline=true;node.preload='metadata';if(item.poster)node.poster=url(item.poster);}
+  node.addEventListener('error',()=>{$('#viewer-error').textContent='Не получилось открыть файл в браузере. ';const a=document.createElement('a');a.href=url(item.source);a.textContent='Открыть оригинал';a.target='_blank';a.rel='noopener';$('#viewer-error').append(a);});
+  if(isCircle){
+   const stage=document.createElement('div');stage.className='circle-stage';stage.append(node);body.append(stage);
+   const controls=document.createElement('div');controls.className='circle-controls';
+   controls.innerHTML='<div class="circle-timeline"><input type="range" min="0" max="1" step="0.1" value="0" aria-label="Перемотка поздравления"><span class="circle-time" aria-live="off">0:00 / 0:00</span></div><div class="circle-actions"><button class="circle-toggle" aria-label="Пауза">Ⅱ</button><span>Голос для тебя</span><button class="circle-sound" aria-label="Выключить звук" aria-pressed="true">Звук вкл.</button></div>';
+   body.append(controls);
+   const toggle=controls.querySelector('.circle-toggle'),sound=controls.querySelector('.circle-sound'),seek=controls.querySelector('input'),time=controls.querySelector('.circle-time');
+   const clock=n=>duration(Number.isFinite(n)?n:0);
+   function update(){const length=Number.isFinite(node.duration)?node.duration:0;seek.max=String(length||1);seek.value=String(node.currentTime);seek.setAttribute('aria-valuetext',clock(node.currentTime)+' из '+clock(length));time.textContent=clock(node.currentTime)+' / '+clock(length);toggle.textContent=node.paused?'▶':'Ⅱ';toggle.setAttribute('aria-label',node.paused?'Продолжить поздравление':'Пауза');}
+   ['timeupdate','durationchange','play','pause','ended'].forEach(event=>node.addEventListener(event,update));
+   toggle.onclick=()=>{if(node.paused)node.play().catch(()=>{$('#viewer-error').textContent='Не удалось начать воспроизведение. Попробуй ещё раз.';});else node.pause();};
+   sound.onclick=()=>{node.muted=!node.muted;sound.textContent=node.muted?'Звук выкл.':'Звук вкл.';sound.setAttribute('aria-label',node.muted?'Включить звук':'Выключить звук');sound.setAttribute('aria-pressed',String(!node.muted));};
+   seek.oninput=()=>{node.currentTime=Number(seek.value);update();};update();
+  }else body.append(node);
+  viewer.showModal();document.body.style.overflow='hidden';
+  if(isVideo)node.play().catch(()=>{$('#viewer-error').textContent='Нажми ▶ на видео, чтобы начать.';});
+ }
+ function close(){viewer.close();}
+ viewer.addEventListener('close',()=>{body.querySelectorAll('video').forEach(v=>{v.pause();v.removeAttribute('src');v.load();});body.replaceChildren();document.body.style.overflow='';previousFocus?.focus();});
+ $('#close-viewer').addEventListener('click',close);
+ viewer.addEventListener('click',e=>{if(e.target===viewer){const r=viewer.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)close();}});
+ document.addEventListener('visibilitychange',()=>{if(document.hidden)pauseAll();});
+ document.addEventListener('play',e=>{if(e.target.tagName==='VIDEO'&&!e.target.muted)$$('video').filter(v=>v!==e.target).forEach(v=>v.pause());},true);
+ const share=$('#share');if(/^https?:$/.test(location.protocol)&&!['localhost','127.0.0.1'].includes(location.hostname)){share.hidden=false;share.onclick=async()=>{try{if(navigator.share)await navigator.share({title:document.title,text:'Сначала было движение. Потом вокруг него появился целый мир.',url:location.href.split('#')[0]});else{await navigator.clipboard.writeText(location.href.split('#')[0]);$('#share-status').textContent='Ссылка скопирована';}}catch(e){if(e.name!=='AbortError')$('#share-status').textContent='Можно скопировать ссылку из адресной строки.';}};}
+ const first=D.content.sections[0], early=first.media||[];
+ if(early.length){
+  const v=early[0];$('#hero-media').innerHTML=`<button class="hero-media-button" aria-label="Открыть раннее видео Насти"><img class="hero-photo" src="${url(v.poster)}" alt="Кадр из раннего видео Насти"><span class="hero-play">▶ С этого всё начиналось</span></button>`;
+  $('#hero-media button').onclick=()=>open(v,'Сначала было движение');
+  if(early.length>1){const strip=document.createElement('div');strip.className='early-strip';early.slice(1).forEach((v,i)=>{const b=document.createElement('button');b.textContent=`Ещё движение ${i+2} ↗`;b.onclick=()=>open(v,'Сначала было движение');strip.append(b);});$('#hero-media').append(strip);}
+ }else{
+  $('#hero-media').innerHTML='<div class="movement-object" aria-hidden="true"><div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div><span class="movement-star"><svg class="vector-mark" viewBox="0 0 100 100" fill="none" aria-hidden="true" focusable="false"><path d="M50 7v86M7 50h86M20 20l60 60M20 80l60-60" stroke="currentColor" stroke-width="13"/></svg></span><span class="orbit-dot"></span></div>';
+  $('.handwritten').textContent='тело · музыка · камера';
+ }
+ function duration(n){return `${Math.floor(n/60)}:${String(Math.floor(n%60)).padStart(2,'0')}`;}
+ $('#circles').innerHTML=D.people.map((p,i)=>`<article class="person"><button class="circle" data-person="${esc(p.id)}" aria-label="Слушать: ${esc(p.name)}${p.part?', часть '+p.part:''}"><img src="${url(p.poster)}" alt="${esc(p.name)}" loading="lazy" width="240" height="240"><video muted loop playsinline preload="none" data-preview="${i}" tabindex="-1" aria-hidden="true"></video><span class="circle-play" aria-hidden="true">▶</span></button><span class="person-name">${esc(p.name)}</span><span class="person-meta">${p.part?'часть '+p.part+' · ':''}${duration(p.duration)}</span></article>`).join('');
+ const previews=$$('[data-preview]');let activePreviews=0;
+ async function preview(v){
+  if(reduced.matches||navigator.connection?.saveData||matchMedia('(pointer: coarse)').matches||viewer.open||document.hidden||activePreviews>=2||previews.filter(p=>!p.paused).length>=2||!v.paused)return;
+  const p=D.people[Number(v.dataset.preview)];if(!v.getAttribute('src'))v.src=url(p.web_source||p.source);
+  v.muted=true;activePreviews++;try{await v.play();}catch{}finally{activePreviews=Math.max(0,activePreviews-1);}
+ }
+ const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{const v=e.target;if(!e.isIntersecting)v.pause();else if(Number(v.dataset.preview)<2)preview(v);});},{threshold:.7});
+ previews.forEach(v=>observer.observe(v));
+ $$('[data-person]').forEach(b=>{const p=D.people.find(p=>p.id===b.dataset.person);b.onclick=()=>open(p,p.name+(p.part?' · часть '+p.part:''));b.addEventListener('pointerenter',()=>preview(b.querySelector('video')));b.addEventListener('pointerleave',()=>b.querySelector('video').pause());});
+ reduced.addEventListener('change',()=>{if(reduced.matches)previews.forEach(v=>v.pause());});
+ let selectedTheme='Все',expanded=false;
+ const topics=['Все',...D.content.sections.find(s=>s.id==='permissions').themes];
+ const order=D.content.quote_order||[];
+ const quotes=D.quotes.filter(q=>q.section!=='inside').sort((a,b)=>(order.includes(a.id)?order.indexOf(a.id):99)-(order.includes(b.id)?order.indexOf(b.id):99));
+ function renderQuotes(){
+  const filtered=quotes.filter(q=>selectedTheme==='Все'||q.themes.includes(selectedTheme));const shown=expanded?filtered:filtered.slice(0,6);
+  $('#quotes').innerHTML=shown.map(q=>`<article class="quote-card"><span class="quote-theme">${esc(q.themes[0])}</span><blockquote>${esc(q.excerpt)}</blockquote><p class="quote-by">${esc(q.author||'Из нашего чата')}</p></article>`).join('');
+  $('#more-quotes').hidden=filtered.length<=6;$('#more-quotes').innerHTML=expanded?'Свернуть подборку ↑':'Ещё слова, которые остались с нами ↓';
+  $$('[data-theme]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.theme===selectedTheme)));
+ }
+ $('#quote-filters').innerHTML=topics.map(t=>`<button data-theme="${esc(t)}" aria-pressed="${t==='Все'}">${esc(t)}</button>`).join('');
+ $$('[data-theme]').forEach(b=>b.onclick=()=>{selectedTheme=b.dataset.theme;expanded=false;renderQuotes();});
+ $('#more-quotes').onclick=()=>{expanded=!expanded;renderQuotes();};renderQuotes();
+ document.addEventListener('click',e=>{const b=e.target.closest('[data-quote]');if(!b)return;const q=D.quotes.find(q=>q.id===b.dataset.quote);if(q)openNote(q);});
+ let catIndex=0;const cats=['archive-055','archive-059','archive-061','archive-019','archive-057'].map(id=>archive.get(id)).filter(Boolean);
+ function renderCat(){const cat=cats[catIndex];if(!cat)return;$('#cat').innerHTML=`<img src="${url(cat.poster)}" alt="${esc(cat.caption)}" loading="lazy">`;$('#cat-count').textContent=`${catIndex+1} / ${cats.length}`;}
+ function nextCat(){catIndex=(catIndex+1)%cats.length;renderCat();}
+ $('#cat').onclick=nextCat;$('#next-cat').onclick=nextCat;renderCat();
+ $('#cat-video').onclick=()=>open(archive.get('archive-015'),'Тот самый кот на АЗС');
+ const gift=archive.get('archive-063');$('#artifact').innerHTML=`<button class="media-button" aria-label="Открыть Изобилие Вишенок"><img loading="lazy" src="${url(gift.poster)}" alt="Упаковка с надписью Изобилие Вишенок"></button><p>Изобилие Вишенок.<br>Тоже часть истории.</p>`;$('#artifact button').onclick=()=>open(gift,gift.caption);
+ const service=archive.get('archive-051');$('#self-service').innerHTML=`<img loading="lazy" src="${url(service.poster)}" alt="Извините, у нас самообслуживание"><span>Извини-и-ите,<br>у нас самообслуживание.</span>`;$('#self-service').onclick=()=>open(service,'Читать грубым голосом');
+ const aerobics=archive.get('archive-053');$('#aerobics').innerHTML=`<img loading="lazy" src="${url(aerobics.poster)}" alt="Аэробика на Алтае: ноги выше головы"><span>Мама называла это<br>аэробикой.</span>`;$('#aerobics').onclick=()=>open(aerobics,'«Аэробика на Алтае» · Юля Муха');
+ const movie=archive.get('archive-073');$('#movie').innerHTML=`<img loading="lazy" src="${url(movie.poster)}" alt="Видео перед Телозамесом в Петербурге"><span class="movie-play">▶</span>`;$('#movie').onclick=()=>open(movie,'«Когда-нибудь я сниму фильм о своей жизни»');
+ const burst=$('#glitter');burst.onclick=()=>{
+  if(reduced.matches){$('#glitter-message').textContent='«Мой внутренний ребенок готов ликовать». Алёна М.';return;}
+  const rect=burst.getBoundingClientRect();for(let i=0;i<24;i++){const star=document.createElement('span');star.className='spark';star.innerHTML=starMarkup;star.style.left=(rect.left+rect.width/2)+'px';star.style.top=(rect.top+rect.height/2)+'px';star.style.setProperty('--dx',`${(Math.random()-.5)*450}px`);star.style.setProperty('--dy',`${-70-Math.random()*280}px`);star.style.color=['#3157ff','#ff7eb7','#fff'][i%3];document.body.append(star);star.addEventListener('animationend',()=>star.remove(),{once:true});}
+  $('#glitter-message').textContent='«Мой внутренний ребенок готов ликовать». Алёна М.';
+ };
+ const filmOrder=['archive-049','archive-003','archive-085','archive-029','archive-075','archive-009','archive-037','archive-077','archive-047','archive-001'];
+ const films=D.archive.filter(a=>a.visible).sort((a,b)=>(filmOrder.includes(a.id)?filmOrder.indexOf(a.id):99)-(filmOrder.includes(b.id)?filmOrder.indexOf(b.id):99));
+ function renderFilm(){
+  const list=films;
+  $('#film').innerHTML=list.length?list.map((a,i)=>`<figure class="film-card"><button class="media-button" data-media="${a.id}" aria-label="${a.type==='video'?'Смотреть видео':'Открыть фото'}: ${esc(a.caption)}"><img src="${url(a.poster)}" alt="${esc(a.caption)}" loading="lazy">${a.type==='video'?'<span class="film-play">▶ '+duration(a.duration)+'</span>':''}</button><figcaption><span class="frame-number">${String(i+1).padStart(2,'0')}</span><span>${a.place?'<small class="frame-place">'+esc(a.place)+'</small>':''}${esc(a.caption)}</span></figcaption></figure>`).join(''):'<p class="film-empty">Здесь появятся наши воспоминания.</p>';
+  $('#film').scrollLeft=0;$$('[data-media]').forEach(b=>b.onclick=()=>{const a=archive.get(b.dataset.media);open(a,a.caption);});
+  updateArrows();
+ }
+ function updateArrows(){const f=$('#film');$('#film-prev').disabled=f.scrollLeft<2;$('#film-next').disabled=f.scrollLeft+f.clientWidth>=f.scrollWidth-3;}
+ $('#film-prev').onclick=()=>$('#film').scrollBy({left:-Math.min(600,$('#film').clientWidth*.85),behavior:reduced.matches?'instant':'smooth'});
+ $('#film-next').onclick=()=>$('#film').scrollBy({left:Math.min(600,$('#film').clientWidth*.85),behavior:reduced.matches?'instant':'smooth'});
+ $('#film').addEventListener('scroll',updateArrows,{passive:true});window.addEventListener('resize',updateArrows);renderFilm();
+ new ResizeObserver(updateArrows).observe($('#film'));
+ $('#final-faces').innerHTML=D.people.map(p=>`<img loading="lazy" src="${url(p.poster)}" alt="">`).join('');
+ $('#closing-source').onclick=()=>openNote(D.quotes.find(q=>q.id==='quotes-032'),'Про любящий взгляд Насти');
+})();

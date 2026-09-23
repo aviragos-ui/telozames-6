@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "title": "Телозамес · 6 лет",
+  "idea": "Сначала было движение. Потом вокруг него появился целый мир.",
+  "anniversary": 6,
+  "places": [
+    "Вишенки",
+    "Алтай",
+    "Петербург"
+  ],
+  "stories": [
+    {
+      "id": "raspberry",
+      "title": "Насть, это малина",
+      "text": "С первого алтайского выезда.",
+      "author": "Юля Муха",
+      "media_ids": [
+        "archive-037",
+        "archive-049"
+      ],
+      "kind": "remembered_phrase"
+    },
+    {
+      "id": "self-service",
+      "title": "Извините, у нас самообслуживание",
+      "text": "Читать грубым голосом.",
+      "author": "Юля Муха",
+      "media_ids": [
+        "archive-051"
+      ],
+      "kind": "meme"
+    },
+    {
+      "id": "cat",
+      "title": "Тот самый кот на АЗС",
+      "text": "КАК ТУАЛЕТА НЕТ",
+      "author": "Elya P.",
+      "media_ids": [
+        "archive-015",
+        "archive-055",
+        "archive-059",
+        "archive-061",
+        "archive-019"
+      ],
+      "kind": "meme"
+    },
+    {
+      "id": "glitter",
+      "title": "Блёстки. Масла. Подарки.",
+      "quote": "В обычной жизни я их вообще не ношу, но здесь….. мой внутренний ребенок готов ликовать",
+      "text": "Про блёстки, которые клеят друг другу у зеркала, запахи масел и любопытство перед подарками.",
+      "author": "Алёна М.",
+      "media_ids": [],
+      "kind": "memory"
+    },
+    {
+      "id": "aerobics",
+      "title": "Аэробика на Алтае",
+      "quote": "это моя мама не могла понять что такое телозамес и называла его аэробикой",
+      "author": "Юля Муха",
+      "media_ids": [
+        "archive-053"
+      ],
+      "kind": "memory"
+    },
+    {
+      "id": "movie",
+      "title": "Когда-нибудь я сниму фильм о своей жизни",
+      "text": "Перед Телозамесом в Петербурге.",
+      "media_ids": [
+        "archive-073"
+      ],
+      "kind": "video_quote_from_caption"
+    },
+    {
+      "id": "headstand",
+      "title": "Просто постоять вместе на голове",
+      "quote": "это просто всегда мы с Г. — просто постоять вместе на голове, уже отрада",
+      "author": "Anastasiia N.",
+      "media_ids": [
+        "archive-075"
+      ],
+      "kind": "memory"
+    }
+  ],
+  "quote_order": [
+    "quotes-011",
+    "quotes-013",
+    "quotes-037",
+    "quotes-031",
+    "quotes-046",
+    "quotes-015",
+    "quotes-041",
+    "quotes-042",
+    "quotes-016",
+    "quotes-032"
+  ],
+  "sections": [
+    {
+      "id": "movement",
+      "title": "Сначала было движение",
+      "type": "hero",
+      "media": [],
+      "fallback_archive_id": null,
+      "intro": "До того, как появился Телозамес, было просто тело. Музыка. Камера. И желание двигаться.",
+      "early_experiments_status": "awaiting_assets"
+    },
+    {
+      "id": "people",
+      "title": "Потом появился мир",
+      "type": "circles"
+    },
+    {
+      "id": "permissions",
+      "title": "Что Телозамес разрешил",
+      "type": "quotes",
+      "themes": [
+        "свобода тела",
+        "встреча с собой",
+        "игра и детство",
+        "люди и сообщество",
+        "изменения"
+      ]
+    },
+    {
+      "id": "inside",
+      "title": "То, что понимают только свои",
+      "type": "memories",
+      "quote_ids": [
+        "quotes-030",
+        "quotes-024"
+      ],
+      "archive_ids": [
+        "archive-019",
+        "archive-055",
+        "archive-059",
+        "archive-061",
+        "archive-053",
+        "archive-017",
+        "archive-063"
+      ]
+    },
+    {
+      "id": "places",
+      "title": "Места, где это случилось",
+      "type": "film",
+      "place_names_source": "verified_archive_captions",
+      "presentation": "single_film_with_place_captions",
+      "photo_geography": "verified_chat_captions_only"
+    },
+    {
+      "id": "final",
+      "title": "Смотри, что ты сотворила. И каких людей вокруг себя собрала.",
+      "type": "final",
+      "closing_quote": "танцуй так, будто на тебя смотрит любящий взгляд Насти"
+    }
+  ]
+}

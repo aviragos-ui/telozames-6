@@ -1,0 +1,275 @@
+[
+  {
+    "id": "quotes-004",
+    "author": "Darya",
+    "themes": [
+      "встреча с собой"
+    ],
+    "excerpt": "почувствовать свое тело и двигаться из его импульса",
+    "featured": true,
+    "review": "editorial_selection",
+    "quote": "почувствовать свое тело и двигаться из его импульса",
+    "theme": "встреча с собой",
+    "section": "permissions"
+  },
+  {
+    "id": "quotes-007",
+    "author": null,
+    "themes": [
+      "люди и сообщество"
+    ],
+    "excerpt": "возможность видеть красоту людей и танцующих душ, и заботу",
+    "featured": true,
+    "review": "editorial_selection",
+    "quote": "возможность видеть красоту людей и танцующих душ, и заботу",
+    "theme": "люди и сообщество",
+    "section": "permissions"
+  },
+  {
+    "id": "quotes-010",
+    "author": "Оля П.",
+    "themes": [
+      "изменения"
+    ],
+    "excerpt": "всегда выхожу из зала немножко другая — легче и свободнее",
+    "featured": true,
+    "review": "editorial_selection",
+    "quote": "всегда выхожу из зала немножко другая — легче и свободнее",
+    "theme": "изменения",
+    "section": "permissions"
+  },
+  {
+    "id": "quotes-011",
+    "author": "Анна Е.",
+    "themes": [
+      "свобода тела"
+    ],
+    "excerpt": "Чувствую все тело и ему не страшно!",
+    "featured": true,
+    "review": "editorial_selection",
+    "quote": "Чувствую все тело и ему не страшно!",
+    "theme": "свобода тела",
+    "section": "permissions"
+  },
+  {
+    "id": "quotes-013",
+    "author": "Anna F.",
+    "themes": [
+      "встреча с собой"
+    ],
+    "excerpt": "почувствовать себя «дома», вернуть себя себе и взрастить внутри себя опору.",
+    "featured": true,
+    "review": "editorial_selection",
+    "quote": "почувствовать себя «дома», вернуть себя себе и взрастить внутри себя опору.",
+    "theme": "встреча с собой",
+    "section": "permissions"
+  },
+  {
+    "id": "quotes-014",
+    "author": null,
+    "themes": [
+      "изменения"
+    ],
+    "excerpt": "быть видимой для себя и для других и просто быть!",
+    "featured": true,
+    "review": "editorial_selection",
+    "quote": "быть видимой для себя и для других и просто быть!",
+    "theme": "изменения",
+    "section": "permissions"
+  },
+  {
+    "id": "quotes-015",
+    "author": null,
+    "themes": [
+      "игра и детство"
+    ],
+    "excerpt": "ты и одна побыла, и со всеми побыла, и побесилась, и посочувствовала, и понаслаждалась, и потрудилась.",
+    "featured": true,
+    "review": "editorial_selection",
+    "quote": "ты и одна побыла, и со всеми побыла, и побесилась, и посочувствовала, и понаслаждалась, и потрудилась.",
+    "theme": "игра и детство",
+    "section": "permissions"
+  },
+  {
+    "id": "quotes-016",
+    "author": "Ekaterina K.",
+    "themes": [
+      "люди и сообщество"
+    ],
+    "excerpt": "хочется поблагодарить всех за возможность быть неидеальной, уязвимой, за очень безопасное пространство.",
+    "featured": true,
+    "review": "editorial_selection",
+    "quote": "хочется поблагодарить всех за возможность быть неидеальной, уязвимой, за очень безопасное пространство.",
+    "theme": "люди и сообщество",
+    "section": "permissions"
+  },
+  {
+    "id": "quotes-017",
+    "author": "Alina L.",
+    "themes": [
+      "изменения"
+    ],
+    "excerpt": "Очень рада, что вокруг столько живых и настоящих людей.",
+    "featured": true,
+    "review": "editorial_selection",
+    "quote": "Очень рада, что вокруг столько живых и настоящих людей.",
+    "theme": "изменения",
+    "section": "permissions"
+  },
+  {
+    "id": "quotes-021",
+    "author": null,
+    "themes": [
+      "свобода тела"
+    ],
+    "excerpt": "И после я шла по улице и внутри такая волшебная тишина, которой я давно не чувствовала",
+    "featured": true,
+    "review": "editorial_selection",
+    "quote": "И после я шла по улице и внутри такая волшебная тишина, которой я давно не чувствовала",
+    "theme": "свобода тела",
+    "section": "permissions"
+  },
+  {
+    "id": "quotes-024",
+    "author": "Anastasia Z.",
+    "themes": [
+      "изменения"
+    ],
+    "excerpt": "Этот финик!!!! Съела его с огромным кайфом",
+    "featured": true,
+    "review": "editorial_selection",
+    "quote": "Этот финик!!!! Съела его с огромным кайфом",
+    "theme": "изменения",
+    "section": "permissions"
+  },
+  {
+    "id": "quotes-025",
+    "author": "Анна Pro",
+    "themes": [
+      "встреча с собой"
+    ],
+    "excerpt": "Такое погружение и честный диалог с собой случился, чего я давно и хотела",
+    "featured": true,
+    "review": "editorial_selection",
+    "quote": "Такое погружение и честный диалог с собой случился, чего я давно и хотела",
+    "theme": "встреча с собой",
+    "section": "permissions"
+  },
+  {
+    "id": "quotes-026",
+    "author": "Vera C.",
+    "themes": [
+      "люди и сообщество"
+    ],
+    "excerpt": "это было такое безопасное место, которое я давно искала",
+    "featured": true,
+    "review": "editorial_selection",
+    "quote": "это было такое безопасное место, которое я давно искала",
+    "theme": "люди и сообщество",
+    "section": "permissions"
+  },
+  {
+    "id": "quotes-030",
+    "author": null,
+    "themes": [
+      "игра и детство"
+    ],
+    "excerpt": "Ситуация: у меня теперь есть алтарь телозамеса...",
+    "featured": true,
+    "review": "editorial_selection",
+    "quote": "Ситуация: у меня теперь есть алтарь телозамеса...",
+    "theme": "игра и детство",
+    "section": "inside"
+  },
+  {
+    "id": "quotes-031",
+    "author": "Daria T.",
+    "themes": [
+      "люди и сообщество"
+    ],
+    "excerpt": "Я много где бывала, но нигде не видела концентрацию таких теплых людей.",
+    "featured": true,
+    "review": "editorial_selection",
+    "quote": "Я много где бывала, но нигде не видела концентрацию таких теплых людей.",
+    "theme": "люди и сообщество",
+    "section": "permissions"
+  },
+  {
+    "id": "quotes-032",
+    "author": null,
+    "themes": [
+      "игра и детство"
+    ],
+    "excerpt": "Спасибо за такие подарки, они очень летние, наивные и такие, что хочется улыбаться, это же так круто дарить людям повод для улыбки",
+    "featured": true,
+    "review": "editorial_selection",
+    "quote": "Спасибо за такие подарки, они очень летние, наивные и такие, что хочется улыбаться, это же так круто дарить людям повод для улыбки",
+    "theme": "игра и детство",
+    "section": "permissions"
+  },
+  {
+    "id": "quotes-037",
+    "author": "Ksusha L.",
+    "themes": [
+      "встреча с собой"
+    ],
+    "excerpt": "Чувствую себя немного безумной и очень живой, разной и объемной, достаточной",
+    "featured": true,
+    "review": "editorial_selection",
+    "quote": "Чувствую себя немного безумной и очень живой, разной и объемной, достаточной",
+    "theme": "встреча с собой",
+    "section": "permissions"
+  },
+  {
+    "id": "quotes-041",
+    "author": null,
+    "themes": [
+      "изменения"
+    ],
+    "excerpt": "Всплыли на блюдечке все идеи, о которых я раньше думала и побоялась реализовать.",
+    "featured": true,
+    "review": "editorial_selection",
+    "quote": "Всплыли на блюдечке все идеи, о которых я раньше думала и побоялась реализовать.",
+    "theme": "изменения",
+    "section": "permissions"
+  },
+  {
+    "id": "quotes-042",
+    "author": "Кристина",
+    "themes": [
+      "свобода тела"
+    ],
+    "excerpt": "В этот раз я буквально была в разрешении быть как чувствуется.",
+    "featured": true,
+    "review": "editorial_selection",
+    "quote": "В этот раз я буквально была в разрешении быть как чувствуется.",
+    "theme": "свобода тела",
+    "section": "permissions"
+  },
+  {
+    "id": "quotes-046",
+    "author": "Daria",
+    "themes": [
+      "изменения"
+    ],
+    "excerpt": "Случился будто большой внутренний выдох, который был так нужен!",
+    "featured": true,
+    "review": "editorial_selection",
+    "quote": "Случился будто большой внутренний выдох, который был так нужен!",
+    "theme": "изменения",
+    "section": "permissions"
+  },
+  {
+    "id": "quotes-047",
+    "author": "Lana V.",
+    "themes": [
+      "игра и детство"
+    ],
+    "excerpt": "Как говорили классики : shake your booty и пусть весь мир подождёт.",
+    "featured": true,
+    "review": "editorial_selection",
+    "quote": "Как говорили классики : shake your booty и пусть весь мир подождёт.",
+    "theme": "игра и детство",
+    "section": "permissions"
+  }
+]
