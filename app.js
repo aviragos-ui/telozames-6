@@ -56,7 +56,7 @@
  viewer.addEventListener('click',e=>{if(e.target===viewer){const r=viewer.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)close();}});
  document.addEventListener('visibilitychange',()=>{if(document.hidden)pauseAll();});
  document.addEventListener('play',e=>{if(e.target.tagName==='VIDEO'&&!e.target.muted)$$('video').filter(v=>v!==e.target).forEach(v=>v.pause());},true);
- const share=$('#share');if(/^https?:$/.test(location.protocol)&&!['localhost','127.0.0.1'].includes(location.hostname)){share.hidden=false;share.onclick=async()=>{try{if(navigator.share)await navigator.share({title:document.title,text:'Настя, тебе письмо. От твоих людей — с любовью.',url:location.href.split('#')[0]});else{await navigator.clipboard.writeText(location.href.split('#')[0]);$('#share-status').textContent='Ссылка скопирована';}}catch(e){if(e.name!=='AbortError')$('#share-status').textContent='Можно скопировать ссылку из адресной строки.';}};}
+ const share=$('#share');if(/^https?:$/.test(location.protocol)&&!['localhost','127.0.0.1'].includes(location.hostname)){share.hidden=false;share.onclick=async()=>{try{if(navigator.share)await navigator.share({title:document.title,text:'For Nastya, with love 💙',url:location.href.split('#')[0]});else{await navigator.clipboard.writeText(location.href.split('#')[0]);$('#share-status').textContent='Ссылка скопирована';}}catch(e){if(e.name!=='AbortError')$('#share-status').textContent='Можно скопировать ссылку из адресной строки.';}};}
  const first=D.content.sections[0], early=first.media||[];
  const portrait=D.content.portrait;
  if(portrait){
