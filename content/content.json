@@ -4,87 +4,19 @@
   "idea": "Сначала было движение. Потом вокруг него появился целый мир.",
   "anniversary": 6,
   "places": [
-    "Вишенки",
-    "Алтай",
     "Гоа",
-    "Петербург"
+    "Алтай",
+    "Петербург",
+    "Вишенки"
   ],
-  "stories": [
-    {
-      "id": "raspberry",
-      "title": "Насть, это малина",
-      "text": "С первого алтайского выезда.",
-      "author": "Юля Муха",
-      "media_ids": [
-        "archive-037",
-        "archive-049"
-      ],
-      "kind": "remembered_phrase"
-    },
-    {
-      "id": "self-service",
-      "title": "Извините, у нас самообслуживание",
-      "text": "Читать грубым голосом.",
-      "author": "Юля Муха",
-      "media_ids": [
-        "archive-051"
-      ],
-      "kind": "meme"
-    },
-    {
-      "id": "cat",
-      "title": "Тот самый кот на АЗС",
-      "text": "КАК ТУАЛЕТА НЕТ",
-      "author": "Elya P.",
-      "media_ids": [
-        "archive-015",
-        "archive-055",
-        "archive-059",
-        "archive-061",
-        "archive-019"
-      ],
-      "kind": "meme"
-    },
-    {
-      "id": "glitter",
-      "title": "Блёстки. Масла. Подарки.",
-      "quote": "В обычной жизни я их вообще не ношу, но здесь….. мой внутренний ребенок готов ликовать",
-      "text": "Про блёстки, которые клеят друг другу у зеркала, запахи масел и любопытство перед подарками.",
-      "author": "Алёна М.",
-      "media_ids": [],
-      "kind": "memory"
-    },
-    {
-      "id": "aerobics",
-      "title": "Аэробика на Алтае",
-      "quote": "это моя мама не могла понять что такое телозамес и называла его аэробикой",
-      "author": "Юля Муха",
-      "media_ids": [
-        "archive-053"
-      ],
-      "kind": "memory"
-    },
-    {
-      "id": "movie",
-      "title": "Когда-нибудь я сниму фильм о своей жизни",
-      "text": "Перед Телозамесом в Петербурге.",
-      "media_ids": [
-        "archive-073"
-      ],
-      "kind": "video_quote_from_caption"
-    },
-    {
-      "id": "headstand",
-      "title": "Просто постоять вместе на голове",
-      "quote": "это просто всегда мы с Г. — просто постоять вместе на голове, уже отрада",
-      "author": "Anastasiia N.",
-      "media_ids": [
-        "archive-075"
-      ],
-      "kind": "memory"
-    }
-  ],
+  "stories": [],
   "quote_order": [
+    "notes-001",
+    "quotes-011",
+    "notes-002",
+    "quotes-015",
+    "quotes-010",
+    "quotes-031",
     "quotes-011",
     "quotes-013",
     "quotes-037",
@@ -168,25 +100,16 @@
       "id": "inside",
       "title": "То, что понимают только свои",
       "type": "memories",
-      "quote_ids": [
-        "quotes-030",
-        "quotes-024"
-      ],
+      "quote_ids": [],
       "archive_ids": [
+        "archive-015",
         "archive-019",
         "archive-055",
         "archive-059",
         "archive-061",
-        "archive-053",
-        "archive-017",
-        "archive-063"
+        "archive-053"
       ],
       "collections": {
-        "ritual": [
-          "archive-106",
-          "archive-107",
-          "archive-109"
-        ],
         "after": [
           "archive-093",
           "archive-094",
@@ -202,6 +125,8 @@
       "presentation": "single_film_with_place_captions",
       "photo_geography": "verified_chat_captions_only",
       "featured_collection": [
+        "archive-112",
+        "archive-113",
         "archive-096",
         "archive-097",
         "archive-098",
@@ -229,7 +154,7 @@
       "type": "video",
       "web_source": "media/dance-001-web-v2.mp4",
       "width": 562,
-      "caption": "2021",
+      "caption": "Танец Насти",
       "source": "media/dance-001-web-v2.mp4"
     },
     {
@@ -240,7 +165,7 @@
       "type": "video",
       "web_source": "media/dance-002-original.mp4",
       "width": 562,
-      "caption": "2021 · ещё один танец",
+      "caption": "Танец Насти",
       "source": "media/dance-002-original.mp4"
     },
     {
@@ -251,7 +176,7 @@
       "type": "video",
       "web_source": "media/dance-003-original.mp4",
       "width": 562,
-      "caption": "2022",
+      "caption": "Танец Насти",
       "source": "media/dance-003-original.mp4"
     },
     {
@@ -262,7 +187,7 @@
       "type": "video",
       "web_source": "media/dance-004-original.mp4",
       "width": 562,
-      "caption": "2023",
+      "caption": "Танец Насти",
       "source": "media/dance-004-original.mp4"
     },
     {
@@ -273,7 +198,7 @@
       "type": "video",
       "web_source": "media/dance-005-web-v2.mp4",
       "width": 562,
-      "caption": "2025",
+      "caption": "Танец Насти",
       "source": "media/dance-005-web-v2.mp4"
     },
     {
@@ -284,7 +209,7 @@
       "type": "video",
       "web_source": "media/dance-006-web-v2.mp4",
       "width": 562,
-      "caption": "2026",
+      "caption": "Танец Насти",
       "source": "media/dance-006-web-v2.mp4"
     }
   ],

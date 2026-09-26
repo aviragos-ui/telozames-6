@@ -6,7 +6,7 @@
  const label=s=>s.charAt(0).toLocaleUpperCase('ru')+s.slice(1);
  const quoted=s=>{const text=String(s).trim();const period=text.endsWith('.');return '«'+esc((period?text.slice(0,-1):text).replace(/«/g,'„').replace(/»/g,'“'))+'»'+(period?'.':'');};
  const url=s=>String(s).split('/').map(encodeURIComponent).join('/');
- const starMarkup='<svg class="vector-mark" viewBox="0 0 100 100" fill="none" aria-hidden="true" focusable="false"><path d="M50 7v86M7 50h86M20 20l60 60M20 80l60-60" stroke="currentColor" stroke-width="13"/></svg>';
+ const starMarkup='<img class="brand-emblem" src="brand-symbol.svg" alt="">';
  const reduced=matchMedia('(prefers-reduced-motion: reduce)');
  const archive=new Map(D.archive.map(a=>[a.id,a]));
  const viewer=$('#viewer'),body=$('#viewer-body');let previousFocus=null;
@@ -61,23 +61,21 @@
  const portrait=D.content.portrait;
  if(portrait){
   $('#hero-media').innerHTML=`<img class="hero-photo portrait-photo" src="${url(portrait.poster)}" alt="Настя" width="620" height="775" fetchpriority="high">`;
-  $('.handwritten').innerHTML='Настя, посмотри.<br>Это всё началось с тебя.';
+  $('.handwritten').innerHTML='Узнаёшь себя?';
  }else{
   $('#hero-media').innerHTML=`<div class="movement-object" aria-hidden="true"><div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div><span class="movement-star">${starMarkup}</span></div>`;
  }
  function memoryCards(target,items,options={}){
   const container=$(target);if(!container)return;
-  container.innerHTML=items.map((a,i)=>`<figure class="memory-card ${options.featureFirst&&i===0?'memory-feature':''}"><button class="media-button" data-memory-index="${i}" aria-label="${a.type==='video'?'Смотреть видео':'Открыть фото'}: ${esc(a.caption||options.title||'Воспоминание')}"><img src="${url(a.poster)}" alt="${esc(a.caption||options.title||'Воспоминание')}" loading="lazy">${a.type==='video'?`<span class="memory-play">▶ <span>${duration(a.duration)}</span></span>`:'<span class="memory-zoom" aria-hidden="true">↗</span>'}</button><figcaption>${esc(a.caption||options.title||'Воспоминание')}</figcaption></figure>`).join('');
+  container.innerHTML=items.map((a,i)=>`<figure class="memory-card ${options.featureFirst&&i===0?'memory-feature':''}"><button class="media-button" data-memory-index="${i}" aria-label="${a.type==='video'?'Смотреть видео':'Открыть фото'}: ${esc(a.caption||options.title||'Воспоминание')}"><img src="${url(a.poster)}" alt="${esc(a.caption||options.title||'Воспоминание')}" loading="lazy">${a.type==='video'?`<span class="memory-play">▶ <span>${duration(a.duration)}</span></span>`:'<span class="memory-zoom" aria-hidden="true">↗</span>'}</button>${options.captions===false?'':`<figcaption>${esc(a.caption||options.title||'Воспоминание')}</figcaption>`}</figure>`).join('');
   container.querySelectorAll('[data-memory-index]').forEach(b=>{const a=items[Number(b.dataset.memoryIndex)];b.onclick=()=>open(a,a.caption||options.title||'Воспоминание');});
  }
  if(early.length){$('#early-memories').hidden=false;memoryCards('#early-clips',early.map((a,i)=>({...a,caption:['Просто включить музыку','Двигаться по-своему','Поймать настроение','Попробовать ещё'][i]||'Ещё одно движение'})));}
  const dances=D.content.dance||[];
- if(dances.length){$('#dance-memory').hidden=false;memoryCards('#dance-clips',dances);}
+ if(dances.length){$('#dance-memory').hidden=false;memoryCards('#dance-clips',dances,{captions:false,title:'Танец Насти'});}
  const collection=name=>D.archive.filter(a=>a.visible&&a.collection===name);
- const rituals=collection('ritual').sort((a,b)=>(a.caption.startsWith('Свечи')?-1:0)-(b.caption.startsWith('Свечи')?-1:0));
- memoryCards('#ritual-gallery',rituals,{featureFirst:true});
  memoryCards('#after-clips',collection('after'));
- memoryCards('#goa-gallery',collection('goa'),{featureFirst:true});
+ memoryCards('#goa-gallery',collection('goa').sort((a,b)=>(a.id==='archive-096'?-1:0)-(b.id==='archive-096'?-1:0)));
  function duration(n){return `${Math.floor(n/60)}:${String(Math.floor(n%60)).padStart(2,'0')}`;}
  $('#circles').innerHTML=D.people.map((p,i)=>`<article class="person"><button class="circle" data-person="${esc(p.id)}" aria-label="Слушать: ${esc(p.name)}${p.part?', часть '+p.part:''}"><img src="${url(p.poster)}" alt="${esc(p.name)}" loading="lazy" width="240" height="240"><video muted loop playsinline preload="none" data-preview="${i}" tabindex="-1" aria-hidden="true"></video><span class="circle-play" aria-hidden="true">▶</span></button><span class="person-name">${esc(p.name)}</span><span class="person-meta">${p.part?'Часть '+p.part+' · ':''}${duration(p.duration)}</span></article>`).join('');
  const previews=$$('[data-preview]');let activePreviews=0;
@@ -109,15 +107,9 @@
  function nextCat(){catIndex=(catIndex+1)%cats.length;renderCat();}
  $('#cat').onclick=nextCat;$('#next-cat').onclick=nextCat;renderCat();
  $('#cat-video').onclick=()=>open(archive.get('archive-015'),'Тот самый кот на АЗС');
- const gift=archive.get('archive-063');$('#artifact').innerHTML=`<button class="media-button" aria-label="Открыть Изобилие Вишенок"><img loading="lazy" src="${url(gift.poster)}" alt="Упаковка с надписью Изобилие Вишенок"></button><p>«Изобилие Вишенок»<br>Тоже часть истории.</p>`;$('#artifact button').onclick=()=>open(gift,gift.caption);
  const service=archive.get('archive-051');$('#self-service').innerHTML=`<img loading="lazy" src="${url(service.poster)}" alt="Извините, у нас самообслуживание"><span>«Извините,<br>у нас самообслуживание»</span>`;$('#self-service').onclick=()=>open(service,'Читать грубым голосом');
  const aerobics=archive.get('archive-053');$('#aerobics').innerHTML=`<img loading="lazy" src="${url(aerobics.poster)}" alt="Аэробика на Алтае: ноги выше головы"><span>Мама называла это<br>аэробикой.</span>`;$('#aerobics').onclick=()=>open(aerobics,'«Аэробика на Алтае» · Юля Муха');
  const movie=archive.get('archive-073');$('#movie').innerHTML=`<img loading="lazy" src="${url(movie.poster)}" alt="Видео перед Телозамесом в Петербурге"><span class="movie-play">▶</span>`;$('#movie').onclick=()=>open(movie,'«Когда-нибудь я сниму фильм о своей жизни»');
- const burst=$('#glitter');burst.onclick=()=>{
-  if(reduced.matches){$('#glitter-message').textContent='«Мой внутренний ребенок готов ликовать». Алёна М.';return;}
-  const rect=burst.getBoundingClientRect();for(let i=0;i<24;i++){const star=document.createElement('span');star.className='spark';star.innerHTML=starMarkup;star.style.left=(rect.left+rect.width/2)+'px';star.style.top=(rect.top+rect.height/2)+'px';star.style.setProperty('--dx',`${(Math.random()-.5)*450}px`);star.style.setProperty('--dy',`${-70-Math.random()*280}px`);star.style.color=['#3157ff','#ff7eb7','#fff'][i%3];document.body.append(star);star.addEventListener('animationend',()=>star.remove(),{once:true});}
-  $('#glitter-message').textContent='«Мой внутренний ребенок готов ликовать». Алёна М.';
- };
  const filmOrder=['archive-049','archive-003','archive-085','archive-029','archive-075','archive-009','archive-037','archive-077','archive-047','archive-001'];
  const films=D.archive.filter(a=>a.visible&&(!a.collection||a.collection==='film')).sort((a,b)=>(filmOrder.includes(a.id)?filmOrder.indexOf(a.id):99)-(filmOrder.includes(b.id)?filmOrder.indexOf(b.id):99));
  function renderFilm(){
@@ -131,5 +123,4 @@
  $('#film-next').onclick=()=>$('#film').scrollBy({left:Math.min(600,$('#film').clientWidth*.85),behavior:reduced.matches?'instant':'smooth'});
  $('#film').addEventListener('scroll',updateArrows,{passive:true});window.addEventListener('resize',updateArrows);renderFilm();
  new ResizeObserver(updateArrows).observe($('#film'));
- $('#final-faces').innerHTML=D.people.map(p=>`<img loading="lazy" src="${url(p.poster)}" alt="">`).join('');
 })();

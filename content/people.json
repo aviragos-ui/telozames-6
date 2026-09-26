@@ -42,20 +42,6 @@
     "source": "media/circles-003-web-v2.mp4"
   },
   {
-    "duration": 41.0436,
-    "height": 1000,
-    "id": "circles-004",
-    "poster": "media/circles-004.jpg",
-    "type": "video_circle",
-    "web_source": "media/circles-004-web-v2.mp4",
-    "width": 562,
-    "media_type": "video",
-    "name": "Аня Ж.",
-    "part": 2,
-    "label": "Аня Ж. 2",
-    "source": "media/circles-004-web-v2.mp4"
-  },
-  {
     "duration": 59.736666666666665,
     "height": 400,
     "id": "circles-010",
@@ -182,6 +168,20 @@
     "source": "media/circles-012-original.mp4"
   },
   {
+    "duration": 59.336666666666666,
+    "height": 400,
+    "id": "circles-023",
+    "poster": "media/circles-023.jpg",
+    "type": "video_circle",
+    "web_source": "media/circles-023-original.mp4",
+    "width": 400,
+    "media_type": "video",
+    "name": "Александра Г.",
+    "part": null,
+    "label": "Александра Г.",
+    "source": "media/circles-023-original.mp4"
+  },
+  {
     "duration": 58.263333333333335,
     "height": 1000,
     "id": "circles-014",
@@ -194,6 +194,34 @@
     "part": null,
     "label": "Алина П.",
     "source": "media/circles-014-web-v2.mp4"
+  },
+  {
+    "duration": 35.1995,
+    "height": 384,
+    "id": "circles-024",
+    "poster": "media/circles-024.jpg",
+    "type": "video_circle",
+    "web_source": "media/circles-024-original.mp4",
+    "width": 384,
+    "media_type": "video",
+    "name": "Алёна М.",
+    "part": null,
+    "label": "Алёна М.",
+    "source": "media/circles-024-original.mp4"
+  },
+  {
+    "duration": 27.668333333333333,
+    "height": 400,
+    "id": "circles-025",
+    "poster": "media/circles-025.jpg",
+    "type": "video_circle",
+    "web_source": "media/circles-025-original.mp4",
+    "width": 400,
+    "media_type": "video",
+    "name": "Анастасия В.",
+    "part": null,
+    "label": "Анастасия В.",
+    "source": "media/circles-025-original.mp4"
   },
   {
     "duration": 59.641666666666666,
@@ -210,6 +238,62 @@
     "source": "media/circles-015-original.mp4"
   },
   {
+    "duration": 58.766,
+    "height": 512,
+    "id": "circles-026",
+    "poster": "media/circles-026.jpg",
+    "type": "video_circle",
+    "web_source": "media/circles-026-original.mp4",
+    "width": 512,
+    "media_type": "video",
+    "name": "Афина",
+    "part": null,
+    "label": "Афина",
+    "source": "media/circles-026-original.mp4"
+  },
+  {
+    "duration": 16.968333333333334,
+    "height": 400,
+    "id": "circles-027",
+    "poster": "media/circles-027.jpg",
+    "type": "video_circle",
+    "web_source": "media/circles-027-original.mp4",
+    "width": 400,
+    "media_type": "video",
+    "name": "Валерия К.",
+    "part": null,
+    "label": "Валерия К.",
+    "source": "media/circles-027-original.mp4"
+  },
+  {
+    "duration": 59.64833333333333,
+    "height": 400,
+    "id": "circles-028",
+    "poster": "media/circles-028.jpg",
+    "type": "video_circle",
+    "web_source": "media/circles-028-original.mp4",
+    "width": 400,
+    "media_type": "video",
+    "name": "Даша В.",
+    "part": null,
+    "label": "Даша В.",
+    "source": "media/circles-028-original.mp4"
+  },
+  {
+    "duration": 59.56166666666667,
+    "height": 400,
+    "id": "circles-029",
+    "poster": "media/circles-029.jpg",
+    "type": "video_circle",
+    "web_source": "media/circles-029-original.mp4",
+    "width": 400,
+    "media_type": "video",
+    "name": "Екатерина Р.",
+    "part": null,
+    "label": "Екатерина Р.",
+    "source": "media/circles-029-original.mp4"
+  },
+  {
     "duration": 58.71333333333333,
     "height": 400,
     "id": "circles-016",
@@ -222,6 +306,20 @@
     "part": null,
     "label": "Елена С.",
     "source": "media/circles-016-original.mp4"
+  },
+  {
+    "duration": 45.67192743764172,
+    "height": 300,
+    "id": "circles-030",
+    "poster": "media/circles-030.jpg",
+    "type": "video_circle",
+    "web_source": "media/circles-030-original.mp4",
+    "width": 300,
+    "media_type": "video",
+    "name": "Илья Ж.",
+    "part": null,
+    "label": "Илья Ж.",
+    "source": "media/circles-030-original.mp4"
   },
   {
     "duration": 59.67,
@@ -238,6 +336,20 @@
     "source": "media/circles-017-original.mp4"
   },
   {
+    "duration": 59.67,
+    "height": 400,
+    "id": "circles-031",
+    "poster": "media/circles-031.jpg",
+    "type": "video_circle",
+    "web_source": "media/circles-031-original.mp4",
+    "width": 400,
+    "media_type": "video",
+    "name": "Мария М.",
+    "part": null,
+    "label": "Мария М.",
+    "source": "media/circles-031-original.mp4"
+  },
+  {
     "duration": 43.86833333333333,
     "height": 400,
     "id": "circles-018",
@@ -252,6 +364,48 @@
     "source": "media/circles-018-original.mp4"
   },
   {
+    "duration": 58.64666666666667,
+    "height": 400,
+    "id": "circles-032",
+    "poster": "media/circles-032.jpg",
+    "type": "video_circle",
+    "web_source": "media/circles-032-original.mp4",
+    "width": 400,
+    "media_type": "video",
+    "name": "Маша Д.",
+    "part": null,
+    "label": "Маша Д.",
+    "source": "media/circles-032-original.mp4"
+  },
+  {
+    "duration": 59.67,
+    "height": 400,
+    "id": "circles-033",
+    "poster": "media/circles-033.jpg",
+    "type": "video_circle",
+    "web_source": "media/circles-033-original.mp4",
+    "width": 400,
+    "media_type": "video",
+    "name": "Настя В.",
+    "part": null,
+    "label": "Настя В.",
+    "source": "media/circles-033-original.mp4"
+  },
+  {
+    "duration": 59.10333333333333,
+    "height": 400,
+    "id": "circles-034",
+    "poster": "media/circles-034.jpg",
+    "type": "video_circle",
+    "web_source": "media/circles-034-original.mp4",
+    "width": 400,
+    "media_type": "video",
+    "name": "Настя К.",
+    "part": null,
+    "label": "Настя К.",
+    "source": "media/circles-034-original.mp4"
+  },
+  {
     "duration": 52.70333333333333,
     "height": 400,
     "id": "circles-019",
@@ -264,6 +418,48 @@
     "part": null,
     "label": "Наталья С.",
     "source": "media/circles-019-original.mp4"
+  },
+  {
+    "duration": 59.63666666666666,
+    "height": 400,
+    "id": "circles-035",
+    "poster": "media/circles-035.jpg",
+    "type": "video_circle",
+    "web_source": "media/circles-035-original.mp4",
+    "width": 400,
+    "media_type": "video",
+    "name": "Наташа В.",
+    "part": null,
+    "label": "Наташа В.",
+    "source": "media/circles-035-original.mp4"
+  },
+  {
+    "duration": 59.736666666666665,
+    "height": 400,
+    "id": "circles-036",
+    "poster": "media/circles-036.jpg",
+    "type": "video_circle",
+    "web_source": "media/circles-036-original.mp4",
+    "width": 400,
+    "media_type": "video",
+    "name": "Оля П.",
+    "part": null,
+    "label": "Оля П.",
+    "source": "media/circles-036-original.mp4"
+  },
+  {
+    "duration": 30.401666666666667,
+    "height": 400,
+    "id": "circles-037",
+    "poster": "media/circles-037.jpg",
+    "type": "video_circle",
+    "web_source": "media/circles-037-original.mp4",
+    "width": 400,
+    "media_type": "video",
+    "name": "Полина P.",
+    "part": null,
+    "label": "Полина P.",
+    "source": "media/circles-037-original.mp4"
   },
   {
     "duration": 59.63666666666666,
@@ -306,5 +502,19 @@
     "part": null,
     "label": "Юлия Б.",
     "source": "media/circles-022-original.mp4"
+  },
+  {
+    "duration": 59.54833333333333,
+    "height": 400,
+    "id": "circles-038",
+    "poster": "media/circles-038.jpg",
+    "type": "video_circle",
+    "web_source": "media/circles-038-original.mp4",
+    "width": 400,
+    "media_type": "video",
+    "name": "Юля Ш.",
+    "part": null,
+    "label": "Юля Ш.",
+    "source": "media/circles-038-original.mp4"
   }
 ]

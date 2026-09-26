@@ -13,69 +13,12 @@
     "caption": "Танец у микроавтобуса",
     "place": null,
     "visible": true,
+    "collection": "film",
     "category_labels": [
       "движение"
     ],
     "category": "movement",
     "source": "media/archive-001-web-v2.mp4"
-  },
-  {
-    "height": 320,
-    "id": "archive-002",
-    "poster": "media/archive-002.jpg",
-    "type": "image",
-    "width": 180,
-    "web_source": "media/archive-002.jpg",
-    "categories": [
-      "movement"
-    ],
-    "caption": "Танец у микроавтобуса",
-    "place": null,
-    "visible": false,
-    "category_labels": [
-      "движение"
-    ],
-    "category": "movement",
-    "source": "media/archive-002.jpg"
-  },
-  {
-    "duration": 18.7,
-    "height": 1000,
-    "id": "archive-003",
-    "poster": "media/archive-003.jpg",
-    "type": "video",
-    "web_source": "media/archive-003-web-v2.mp4",
-    "width": 562,
-    "categories": [
-      "places"
-    ],
-    "caption": "Деревянный дом и зелёный склон",
-    "place": "Вишенки",
-    "visible": true,
-    "category_labels": [
-      "места"
-    ],
-    "category": "places",
-    "source": "media/archive-003-web-v2.mp4"
-  },
-  {
-    "height": 320,
-    "id": "archive-004",
-    "poster": "media/archive-004.jpg",
-    "type": "image",
-    "width": 180,
-    "web_source": "media/archive-004.jpg",
-    "categories": [
-      "places"
-    ],
-    "caption": "Деревянный дом и зелёный склон",
-    "place": "Вишенки",
-    "visible": false,
-    "category_labels": [
-      "места"
-    ],
-    "category": "places",
-    "source": "media/archive-004.jpg"
   },
   {
     "duration": 12.233333333333333,
@@ -91,30 +34,12 @@
     "caption": "Движение у воды",
     "place": null,
     "visible": true,
+    "collection": "film",
     "category_labels": [
       "движение"
     ],
     "category": "movement",
     "source": "media/archive-005-original.mp4"
-  },
-  {
-    "height": 180,
-    "id": "archive-006",
-    "poster": "media/archive-006.jpg",
-    "type": "image",
-    "width": 320,
-    "web_source": "media/archive-006.jpg",
-    "categories": [
-      "movement"
-    ],
-    "caption": "Движение у воды",
-    "place": null,
-    "visible": false,
-    "category_labels": [
-      "движение"
-    ],
-    "category": "movement",
-    "source": "media/archive-006.jpg"
   },
   {
     "duration": 13.2,
@@ -130,30 +55,12 @@
     "caption": "Вместе за столом на улице",
     "place": null,
     "visible": true,
+    "collection": "film",
     "category_labels": [
       "люди"
     ],
     "category": "people",
     "source": "media/archive-007-web-v2.mp4"
-  },
-  {
-    "height": 320,
-    "id": "archive-008",
-    "poster": "media/archive-008.jpg",
-    "type": "image",
-    "width": 180,
-    "web_source": "media/archive-008.jpg",
-    "categories": [
-      "people"
-    ],
-    "caption": "Вместе за столом на улице",
-    "place": null,
-    "visible": false,
-    "category_labels": [
-      "люди"
-    ],
-    "category": "people",
-    "source": "media/archive-008.jpg"
   },
   {
     "duration": 10.966666666666667,
@@ -169,30 +76,12 @@
     "caption": "На берегу, ноги над водой",
     "place": null,
     "visible": true,
+    "collection": "film",
     "category_labels": [
       "атмосфера"
     ],
     "category": "atmosphere",
     "source": "media/archive-009-original.mp4"
-  },
-  {
-    "height": 320,
-    "id": "archive-010",
-    "poster": "media/archive-010.jpg",
-    "type": "image",
-    "width": 240,
-    "web_source": "media/archive-010.jpg",
-    "categories": [
-      "atmosphere"
-    ],
-    "caption": "На берегу, ноги над водой",
-    "place": null,
-    "visible": false,
-    "category_labels": [
-      "атмосфера"
-    ],
-    "category": "atmosphere",
-    "source": "media/archive-010.jpg"
   },
   {
     "duration": 24.9,
@@ -208,69 +97,12 @@
     "caption": "Танец в зале под куполом",
     "place": null,
     "visible": true,
+    "collection": "film",
     "category_labels": [
       "движение"
     ],
     "category": "movement",
     "source": "media/archive-011-original.mp4"
-  },
-  {
-    "height": 320,
-    "id": "archive-012",
-    "poster": "media/archive-012.jpg",
-    "type": "image",
-    "width": 180,
-    "web_source": "media/archive-012.jpg",
-    "categories": [
-      "movement"
-    ],
-    "caption": "Танец в зале под куполом",
-    "place": null,
-    "visible": false,
-    "category_labels": [
-      "движение"
-    ],
-    "category": "movement",
-    "source": "media/archive-012.jpg"
-  },
-  {
-    "duration": 16.333333333333332,
-    "height": 1000,
-    "id": "archive-013",
-    "poster": "media/archive-013.jpg",
-    "type": "video",
-    "web_source": "media/archive-013-original.mp4",
-    "width": 750,
-    "categories": [
-      "movement"
-    ],
-    "caption": "Импровизация в кругу",
-    "place": null,
-    "visible": true,
-    "category_labels": [
-      "движение"
-    ],
-    "category": "movement",
-    "source": "media/archive-013-original.mp4"
-  },
-  {
-    "height": 320,
-    "id": "archive-014",
-    "poster": "media/archive-014.jpg",
-    "type": "image",
-    "width": 240,
-    "web_source": "media/archive-014.jpg",
-    "categories": [
-      "movement"
-    ],
-    "caption": "Импровизация в кругу",
-    "place": null,
-    "visible": false,
-    "category_labels": [
-      "движение"
-    ],
-    "category": "movement",
-    "source": "media/archive-014.jpg"
   },
   {
     "duration": 5.733333333333333,
@@ -286,6 +118,7 @@
     "caption": "Тот самый кот на АЗС",
     "place": null,
     "visible": true,
+    "collection": "inside",
     "category_labels": [
       "смешные моменты"
     ],
@@ -293,61 +126,185 @@
     "source": "media/archive-015-web-v2.mp4"
   },
   {
-    "height": 320,
-    "id": "archive-016",
-    "poster": "media/archive-016.jpg",
-    "type": "image",
-    "width": 180,
-    "web_source": "media/archive-016.jpg",
+    "duration": 9.033333333333333,
+    "height": 848,
+    "id": "archive-112",
+    "poster": "media/archive-112.jpg",
+    "type": "video",
+    "web_source": "media/archive-112-original.mp4",
+    "width": 464,
     "categories": [
-      "funny"
+      "movement"
     ],
-    "caption": "Тот самый кот на АЗС",
-    "place": null,
-    "visible": false,
+    "caption": "Танец вдвоём",
+    "place": "Гоа",
+    "visible": true,
+    "collection": "goa",
     "category_labels": [
-      "смешные моменты"
+      "movement"
     ],
-    "category": "funny",
-    "source": "media/archive-016.jpg"
+    "category": "movement",
+    "source": "media/archive-112-original.mp4"
   },
   {
-    "height": 960,
-    "id": "archive-017",
-    "poster": "media/archive-017.jpg",
+    "height": 1280,
+    "id": "archive-113",
+    "poster": "media/archive-113.jpg",
     "type": "image",
-    "width": 1280,
-    "web_source": "media/archive-017.jpg",
+    "width": 960,
+    "web_source": "media/archive-113.jpg",
     "categories": [
-      "funny"
+      "people"
     ],
-    "caption": "У собаки своя практика",
+    "caption": "Рядом",
+    "place": "Гоа",
+    "visible": true,
+    "collection": "goa",
+    "category_labels": [
+      "people"
+    ],
+    "category": "people",
+    "source": "media/archive-113.jpg"
+  },
+  {
+    "height": 808,
+    "id": "archive-114",
+    "poster": "media/archive-114.jpg",
+    "type": "image",
+    "width": 1206,
+    "web_source": "media/archive-114.jpg",
+    "categories": [
+      "people"
+    ],
+    "caption": "Собраться для одного кадра",
     "place": null,
     "visible": true,
+    "collection": "film",
     "category_labels": [
-      "смешные моменты"
+      "people"
     ],
-    "category": "funny",
-    "source": "media/archive-017.jpg"
+    "category": "people",
+    "source": "media/archive-114.jpg"
   },
   {
-    "height": 390,
-    "id": "archive-018",
-    "poster": "media/archive-018.jpg",
+    "height": 1205,
+    "id": "archive-115",
+    "poster": "media/archive-115.jpg",
     "type": "image",
-    "width": 520,
-    "web_source": "media/archive-018.jpg",
+    "width": 808,
+    "web_source": "media/archive-115.jpg",
     "categories": [
-      "funny"
+      "people"
     ],
-    "caption": "У собаки своя практика",
+    "caption": "Обнять крепче",
     "place": null,
-    "visible": false,
+    "visible": true,
+    "collection": "film",
     "category_labels": [
-      "смешные моменты"
+      "people"
     ],
-    "category": "funny",
-    "source": "media/archive-018.jpg"
+    "category": "people",
+    "source": "media/archive-115.jpg"
+  },
+  {
+    "height": 6770,
+    "id": "archive-116",
+    "poster": "media/archive-116.jpg",
+    "type": "image",
+    "width": 4487,
+    "web_source": "media/archive-116.jpg",
+    "categories": [
+      "people"
+    ],
+    "caption": "Загадывай желание",
+    "place": null,
+    "visible": true,
+    "collection": "film",
+    "category_labels": [
+      "people"
+    ],
+    "category": "people",
+    "source": "media/archive-116.jpg"
+  },
+  {
+    "height": 6000,
+    "id": "archive-117",
+    "poster": "media/archive-117.jpg",
+    "type": "image",
+    "width": 4000,
+    "web_source": "media/archive-117.jpg",
+    "categories": [
+      "people"
+    ],
+    "caption": "Слушать друг друга",
+    "place": null,
+    "visible": true,
+    "collection": "film",
+    "category_labels": [
+      "people"
+    ],
+    "category": "people",
+    "source": "media/archive-117.jpg"
+  },
+  {
+    "height": 3408,
+    "id": "archive-118",
+    "poster": "media/archive-118.jpg",
+    "type": "image",
+    "width": 2272,
+    "web_source": "media/archive-118.jpg",
+    "categories": [
+      "movement"
+    ],
+    "caption": "Руки выше",
+    "place": null,
+    "visible": true,
+    "collection": "film",
+    "category_labels": [
+      "movement"
+    ],
+    "category": "movement",
+    "source": "media/archive-118.jpg"
+  },
+  {
+    "height": 4608,
+    "id": "archive-119",
+    "poster": "media/archive-119.jpg",
+    "type": "image",
+    "width": 3456,
+    "web_source": "media/archive-119.jpg",
+    "categories": [
+      "places"
+    ],
+    "caption": "На выезде",
+    "place": null,
+    "visible": true,
+    "collection": "film",
+    "category_labels": [
+      "places"
+    ],
+    "category": "places",
+    "source": "media/archive-119.jpg"
+  },
+  {
+    "height": 4032,
+    "id": "archive-120",
+    "poster": "media/archive-120.jpg",
+    "type": "image",
+    "width": 3024,
+    "web_source": "media/archive-120.jpg",
+    "categories": [
+      "atmosphere"
+    ],
+    "caption": "Разговоры на кухне",
+    "place": null,
+    "visible": true,
+    "collection": "film",
+    "category_labels": [
+      "atmosphere"
+    ],
+    "category": "atmosphere",
+    "source": "media/archive-120.jpg"
   },
   {
     "height": 1280,
@@ -362,30 +319,12 @@
     "caption": "Кот: «разъеб разъебыч»",
     "place": null,
     "visible": true,
+    "collection": "inside",
     "category_labels": [
       "смешные моменты"
     ],
     "category": "funny",
     "source": "media/archive-019.jpg"
-  },
-  {
-    "height": 520,
-    "id": "archive-020",
-    "poster": "media/archive-020.jpg",
-    "type": "image",
-    "width": 292,
-    "web_source": "media/archive-020.jpg",
-    "categories": [
-      "funny"
-    ],
-    "caption": "Кот: «разъеб разъебыч»",
-    "place": null,
-    "visible": false,
-    "category_labels": [
-      "смешные моменты"
-    ],
-    "category": "funny",
-    "source": "media/archive-020.jpg"
   },
   {
     "height": 2560,
@@ -400,106 +339,12 @@
     "caption": "Вместе после занятия",
     "place": null,
     "visible": true,
+    "collection": "film",
     "category_labels": [
       "люди"
     ],
     "category": "people",
     "source": "media/archive-021.jpg"
-  },
-  {
-    "height": 520,
-    "id": "archive-022",
-    "poster": "media/archive-022.jpg",
-    "type": "image",
-    "width": 390,
-    "web_source": "media/archive-022.jpg",
-    "categories": [
-      "people"
-    ],
-    "caption": "Вместе после занятия",
-    "place": null,
-    "visible": false,
-    "category_labels": [
-      "люди"
-    ],
-    "category": "people",
-    "source": "media/archive-022.jpg"
-  },
-  {
-    "height": 1920,
-    "id": "archive-023",
-    "poster": "media/archive-023.jpg",
-    "type": "image",
-    "width": 2560,
-    "web_source": "media/archive-023.jpg",
-    "categories": [
-      "people"
-    ],
-    "caption": "Селфи у окна",
-    "place": null,
-    "visible": true,
-    "category_labels": [
-      "люди"
-    ],
-    "category": "people",
-    "source": "media/archive-023.jpg"
-  },
-  {
-    "height": 390,
-    "id": "archive-024",
-    "poster": "media/archive-024.jpg",
-    "type": "image",
-    "width": 520,
-    "web_source": "media/archive-024.jpg",
-    "categories": [
-      "people"
-    ],
-    "caption": "Селфи у окна",
-    "place": null,
-    "visible": false,
-    "category_labels": [
-      "люди"
-    ],
-    "category": "people",
-    "source": "media/archive-024.jpg"
-  },
-  {
-    "height": 1920,
-    "id": "archive-025",
-    "poster": "media/archive-025.jpg",
-    "type": "image",
-    "width": 2560,
-    "web_source": "media/archive-025.jpg",
-    "categories": [
-      "people"
-    ],
-    "caption": "Четыре улыбки в одном кадре",
-    "place": null,
-    "visible": true,
-    "category_labels": [
-      "люди"
-    ],
-    "category": "people",
-    "source": "media/archive-025.jpg"
-  },
-  {
-    "height": 390,
-    "id": "archive-026",
-    "poster": "media/archive-026.jpg",
-    "type": "image",
-    "width": 520,
-    "web_source": "media/archive-026.jpg",
-    "categories": [
-      "people"
-    ],
-    "caption": "Четыре улыбки в одном кадре",
-    "place": null,
-    "visible": false,
-    "category_labels": [
-      "люди"
-    ],
-    "category": "people",
-    "source": "media/archive-026.jpg"
   },
   {
     "height": 2560,
@@ -514,68 +359,12 @@
     "caption": "Общее фото в зале",
     "place": null,
     "visible": true,
+    "collection": "film",
     "category_labels": [
       "люди"
     ],
     "category": "people",
     "source": "media/archive-027.jpg"
-  },
-  {
-    "height": 520,
-    "id": "archive-028",
-    "poster": "media/archive-028.jpg",
-    "type": "image",
-    "width": 390,
-    "web_source": "media/archive-028.jpg",
-    "categories": [
-      "people"
-    ],
-    "caption": "Общее фото в зале",
-    "place": null,
-    "visible": false,
-    "category_labels": [
-      "люди"
-    ],
-    "category": "people",
-    "source": "media/archive-028.jpg"
-  },
-  {
-    "height": 1920,
-    "id": "archive-029",
-    "poster": "media/archive-029.jpg",
-    "type": "image",
-    "width": 2560,
-    "web_source": "media/archive-029.jpg",
-    "categories": [
-      "people"
-    ],
-    "caption": "Обниматься и фотографироваться",
-    "place": null,
-    "visible": true,
-    "category_labels": [
-      "люди"
-    ],
-    "category": "people",
-    "source": "media/archive-029.jpg"
-  },
-  {
-    "height": 390,
-    "id": "archive-030",
-    "poster": "media/archive-030.jpg",
-    "type": "image",
-    "width": 520,
-    "web_source": "media/archive-030.jpg",
-    "categories": [
-      "people"
-    ],
-    "caption": "Обниматься и фотографироваться",
-    "place": null,
-    "visible": false,
-    "category_labels": [
-      "люди"
-    ],
-    "category": "people",
-    "source": "media/archive-030.jpg"
   },
   {
     "height": 2560,
@@ -590,106 +379,12 @@
     "caption": "Танец в солнечной полосе",
     "place": null,
     "visible": true,
+    "collection": "film",
     "category_labels": [
       "движение"
     ],
     "category": "movement",
     "source": "media/archive-031.jpg"
-  },
-  {
-    "height": 520,
-    "id": "archive-032",
-    "poster": "media/archive-032.jpg",
-    "type": "image",
-    "width": 390,
-    "web_source": "media/archive-032.jpg",
-    "categories": [
-      "movement"
-    ],
-    "caption": "Танец в солнечной полосе",
-    "place": null,
-    "visible": false,
-    "category_labels": [
-      "движение"
-    ],
-    "category": "movement",
-    "source": "media/archive-032.jpg"
-  },
-  {
-    "height": 2560,
-    "id": "archive-033",
-    "poster": "media/archive-033.jpg",
-    "type": "image",
-    "width": 1920,
-    "web_source": "media/archive-033.jpg",
-    "categories": [
-      "atmosphere"
-    ],
-    "caption": "Подарок с ленточкой",
-    "place": null,
-    "visible": true,
-    "category_labels": [
-      "атмосфера"
-    ],
-    "category": "atmosphere",
-    "source": "media/archive-033.jpg"
-  },
-  {
-    "height": 520,
-    "id": "archive-034",
-    "poster": "media/archive-034.jpg",
-    "type": "image",
-    "width": 390,
-    "web_source": "media/archive-034.jpg",
-    "categories": [
-      "atmosphere"
-    ],
-    "caption": "Подарок с ленточкой",
-    "place": null,
-    "visible": false,
-    "category_labels": [
-      "атмосфера"
-    ],
-    "category": "atmosphere",
-    "source": "media/archive-034.jpg"
-  },
-  {
-    "height": 1280,
-    "id": "archive-035",
-    "poster": "media/archive-035.jpg",
-    "type": "image",
-    "width": 960,
-    "web_source": "media/archive-035.jpg",
-    "categories": [
-      "atmosphere"
-    ],
-    "caption": "Фрукты и свечи у окна",
-    "place": "Вишенки",
-    "visible": true,
-    "category_labels": [
-      "атмосфера"
-    ],
-    "category": "atmosphere",
-    "source": "media/archive-035.jpg"
-  },
-  {
-    "height": 520,
-    "id": "archive-036",
-    "poster": "media/archive-036.jpg",
-    "type": "image",
-    "width": 390,
-    "web_source": "media/archive-036.jpg",
-    "categories": [
-      "atmosphere"
-    ],
-    "caption": "Фрукты и свечи у окна",
-    "place": "Вишенки",
-    "visible": false,
-    "category_labels": [
-      "атмосфера"
-    ],
-    "category": "atmosphere",
-    "source": "media/archive-036.jpg"
   },
   {
     "height": 2049,
@@ -704,182 +399,12 @@
     "caption": "Руки к небу у воды",
     "place": "Алтай",
     "visible": true,
+    "collection": "film",
     "category_labels": [
       "движение"
     ],
     "category": "movement",
     "source": "media/archive-037.jpg"
-  },
-  {
-    "height": 520,
-    "id": "archive-038",
-    "poster": "media/archive-038.jpg",
-    "type": "image",
-    "width": 388,
-    "web_source": "media/archive-038.jpg",
-    "categories": [
-      "movement"
-    ],
-    "caption": "Руки к небу у воды",
-    "place": "Алтай",
-    "visible": false,
-    "category_labels": [
-      "движение"
-    ],
-    "category": "movement",
-    "source": "media/archive-038.jpg"
-  },
-  {
-    "height": 1280,
-    "id": "archive-039",
-    "poster": "media/archive-039.jpg",
-    "type": "image",
-    "width": 960,
-    "web_source": "media/archive-039.jpg",
-    "categories": [
-      "people"
-    ],
-    "caption": "Все в одной куче",
-    "place": "Вишенки",
-    "visible": true,
-    "category_labels": [
-      "люди"
-    ],
-    "category": "people",
-    "source": "media/archive-039.jpg"
-  },
-  {
-    "height": 520,
-    "id": "archive-040",
-    "poster": "media/archive-040.jpg",
-    "type": "image",
-    "width": 390,
-    "web_source": "media/archive-040.jpg",
-    "categories": [
-      "people"
-    ],
-    "caption": "Все в одной куче",
-    "place": "Вишенки",
-    "visible": false,
-    "category_labels": [
-      "люди"
-    ],
-    "category": "people",
-    "source": "media/archive-040.jpg"
-  },
-  {
-    "height": 1280,
-    "id": "archive-041",
-    "poster": "media/archive-041.jpg",
-    "type": "image",
-    "width": 591,
-    "web_source": "media/archive-041.jpg",
-    "categories": [
-      "people"
-    ],
-    "caption": "Чёрно-белый портрет из архива",
-    "place": null,
-    "visible": true,
-    "category_labels": [
-      "люди"
-    ],
-    "category": "people",
-    "source": "media/archive-041.jpg"
-  },
-  {
-    "height": 520,
-    "id": "archive-042",
-    "poster": "media/archive-042.jpg",
-    "type": "image",
-    "width": 240,
-    "web_source": "media/archive-042.jpg",
-    "categories": [
-      "people"
-    ],
-    "caption": "Чёрно-белый портрет из архива",
-    "place": null,
-    "visible": false,
-    "category_labels": [
-      "люди"
-    ],
-    "category": "people",
-    "source": "media/archive-042.jpg"
-  },
-  {
-    "height": 1280,
-    "id": "archive-043",
-    "poster": "media/archive-043.jpg",
-    "type": "image",
-    "width": 699,
-    "web_source": "media/archive-043.jpg",
-    "categories": [
-      "atmosphere"
-    ],
-    "caption": "Скриншот раннего макета открытки",
-    "place": null,
-    "visible": false,
-    "category_labels": [
-      "атмосфера"
-    ],
-    "category": "atmosphere",
-    "source": "media/archive-043.jpg"
-  },
-  {
-    "height": 520,
-    "id": "archive-044",
-    "poster": "media/archive-044.jpg",
-    "type": "image",
-    "width": 282,
-    "web_source": "media/archive-044.jpg",
-    "categories": [
-      "atmosphere"
-    ],
-    "caption": "Скриншот раннего макета открытки",
-    "place": null,
-    "visible": false,
-    "category_labels": [
-      "атмосфера"
-    ],
-    "category": "atmosphere",
-    "source": "media/archive-044.jpg"
-  },
-  {
-    "height": 1280,
-    "id": "archive-045",
-    "poster": "media/archive-045.jpg",
-    "type": "image",
-    "width": 591,
-    "web_source": "media/archive-045.jpg",
-    "categories": [
-      "movement"
-    ],
-    "caption": "Танец в центре круга",
-    "place": null,
-    "visible": true,
-    "category_labels": [
-      "движение"
-    ],
-    "category": "movement",
-    "source": "media/archive-045.jpg"
-  },
-  {
-    "height": 520,
-    "id": "archive-046",
-    "poster": "media/archive-046.jpg",
-    "type": "image",
-    "width": 240,
-    "web_source": "media/archive-046.jpg",
-    "categories": [
-      "movement"
-    ],
-    "caption": "Танец в центре круга",
-    "place": null,
-    "visible": false,
-    "category_labels": [
-      "движение"
-    ],
-    "category": "movement",
-    "source": "media/archive-046.jpg"
   },
   {
     "height": 1280,
@@ -894,30 +419,12 @@
     "caption": "Вместе у зимнего костра",
     "place": null,
     "visible": true,
+    "collection": "film",
     "category_labels": [
       "люди"
     ],
     "category": "people",
     "source": "media/archive-047.jpg"
-  },
-  {
-    "height": 520,
-    "id": "archive-048",
-    "poster": "media/archive-048.jpg",
-    "type": "image",
-    "width": 240,
-    "web_source": "media/archive-048.jpg",
-    "categories": [
-      "people"
-    ],
-    "caption": "Вместе у зимнего костра",
-    "place": null,
-    "visible": false,
-    "category_labels": [
-      "люди"
-    ],
-    "category": "people",
-    "source": "media/archive-048.jpg"
   },
   {
     "height": 1536,
@@ -932,30 +439,12 @@
     "caption": "На катере между горами",
     "place": "Алтай",
     "visible": true,
+    "collection": "film",
     "category_labels": [
       "места"
     ],
     "category": "places",
     "source": "media/archive-049.jpg"
-  },
-  {
-    "height": 388,
-    "id": "archive-050",
-    "poster": "media/archive-050.jpg",
-    "type": "image",
-    "width": 520,
-    "web_source": "media/archive-050.jpg",
-    "categories": [
-      "places"
-    ],
-    "caption": "На катере между горами",
-    "place": "Алтай",
-    "visible": false,
-    "category_labels": [
-      "места"
-    ],
-    "category": "places",
-    "source": "media/archive-050.jpg"
   },
   {
     "height": 2049,
@@ -970,30 +459,12 @@
     "caption": "«Извините, у нас самообслуживание»",
     "place": "Алтай",
     "visible": true,
+    "collection": "inside",
     "category_labels": [
       "смешные моменты"
     ],
     "category": "funny",
     "source": "media/archive-051.jpg"
-  },
-  {
-    "height": 520,
-    "id": "archive-052",
-    "poster": "media/archive-052.jpg",
-    "type": "image",
-    "width": 390,
-    "web_source": "media/archive-052.jpg",
-    "categories": [
-      "funny"
-    ],
-    "caption": "«Извините, у нас самообслуживание»",
-    "place": "Алтай",
-    "visible": false,
-    "category_labels": [
-      "смешные моменты"
-    ],
-    "category": "funny",
-    "source": "media/archive-052.jpg"
   },
   {
     "height": 752,
@@ -1008,30 +479,12 @@
     "caption": "«Аэробика на Алтае»",
     "place": "Алтай",
     "visible": true,
+    "collection": "inside",
     "category_labels": [
       "смешные моменты"
     ],
     "category": "funny",
     "source": "media/archive-053.jpg"
-  },
-  {
-    "height": 520,
-    "id": "archive-054",
-    "poster": "media/archive-054.jpg",
-    "type": "image",
-    "width": 518,
-    "web_source": "media/archive-054.jpg",
-    "categories": [
-      "funny"
-    ],
-    "caption": "«Аэробика на Алтае»",
-    "place": "Алтай",
-    "visible": false,
-    "category_labels": [
-      "смешные моменты"
-    ],
-    "category": "funny",
-    "source": "media/archive-054.jpg"
   },
   {
     "height": 1280,
@@ -1046,30 +499,12 @@
     "caption": "Кот: «Я тоже»",
     "place": null,
     "visible": true,
+    "collection": "inside",
     "category_labels": [
       "смешные моменты"
     ],
     "category": "funny",
     "source": "media/archive-055.jpg"
-  },
-  {
-    "height": 520,
-    "id": "archive-056",
-    "poster": "media/archive-056.jpg",
-    "type": "image",
-    "width": 292,
-    "web_source": "media/archive-056.jpg",
-    "categories": [
-      "funny"
-    ],
-    "caption": "Кот: «Я тоже»",
-    "place": null,
-    "visible": false,
-    "category_labels": [
-      "смешные моменты"
-    ],
-    "category": "funny",
-    "source": "media/archive-056.jpg"
   },
   {
     "height": 1280,
@@ -1084,30 +519,12 @@
     "caption": "Кот. Просто кот",
     "place": null,
     "visible": true,
+    "collection": "inside",
     "category_labels": [
       "смешные моменты"
     ],
     "category": "funny",
     "source": "media/archive-057.jpg"
-  },
-  {
-    "height": 520,
-    "id": "archive-058",
-    "poster": "media/archive-058.jpg",
-    "type": "image",
-    "width": 292,
-    "web_source": "media/archive-058.jpg",
-    "categories": [
-      "funny"
-    ],
-    "caption": "Кот. Просто кот",
-    "place": null,
-    "visible": false,
-    "category_labels": [
-      "смешные моменты"
-    ],
-    "category": "funny",
-    "source": "media/archive-058.jpg"
   },
   {
     "height": 1280,
@@ -1122,30 +539,12 @@
     "caption": "Кот: «Маша не иди на бокс»",
     "place": null,
     "visible": true,
+    "collection": "inside",
     "category_labels": [
       "смешные моменты"
     ],
     "category": "funny",
     "source": "media/archive-059.jpg"
-  },
-  {
-    "height": 520,
-    "id": "archive-060",
-    "poster": "media/archive-060.jpg",
-    "type": "image",
-    "width": 292,
-    "web_source": "media/archive-060.jpg",
-    "categories": [
-      "funny"
-    ],
-    "caption": "Кот: «Маша не иди на бокс»",
-    "place": null,
-    "visible": false,
-    "category_labels": [
-      "смешные моменты"
-    ],
-    "category": "funny",
-    "source": "media/archive-060.jpg"
   },
   {
     "height": 1280,
@@ -1160,68 +559,12 @@
     "caption": "Кот: «Это мутная тема Лен»",
     "place": null,
     "visible": true,
+    "collection": "inside",
     "category_labels": [
       "смешные моменты"
     ],
     "category": "funny",
     "source": "media/archive-061.jpg"
-  },
-  {
-    "height": 520,
-    "id": "archive-062",
-    "poster": "media/archive-062.jpg",
-    "type": "image",
-    "width": 292,
-    "web_source": "media/archive-062.jpg",
-    "categories": [
-      "funny"
-    ],
-    "caption": "Кот: «Это мутная тема Лен»",
-    "place": null,
-    "visible": false,
-    "category_labels": [
-      "смешные моменты"
-    ],
-    "category": "funny",
-    "source": "media/archive-062.jpg"
-  },
-  {
-    "height": 1280,
-    "id": "archive-063",
-    "poster": "media/archive-063.jpg",
-    "type": "image",
-    "width": 960,
-    "web_source": "media/archive-063.jpg",
-    "categories": [
-      "atmosphere"
-    ],
-    "caption": "«Изобилие Вишенок»",
-    "place": "Вишенки",
-    "visible": true,
-    "category_labels": [
-      "атмосфера"
-    ],
-    "category": "atmosphere",
-    "source": "media/archive-063.jpg"
-  },
-  {
-    "height": 520,
-    "id": "archive-064",
-    "poster": "media/archive-064.jpg",
-    "type": "image",
-    "width": 390,
-    "web_source": "media/archive-064.jpg",
-    "categories": [
-      "atmosphere"
-    ],
-    "caption": "«Изобилие Вишенок»",
-    "place": "Вишенки",
-    "visible": false,
-    "category_labels": [
-      "атмосфера"
-    ],
-    "category": "atmosphere",
-    "source": "media/archive-064.jpg"
   },
   {
     "duration": 32.833333333333336,
@@ -1243,27 +586,6 @@
     ],
     "category": "people",
     "source": "media/archive-093-web-v2.mp4"
-  },
-  {
-    "duration": 20.31501133786848,
-    "height": 1000,
-    "id": "archive-094",
-    "poster": "media/archive-094.jpg",
-    "type": "video",
-    "web_source": "media/archive-094-web-v2.mp4",
-    "width": 562,
-    "categories": [
-      "people"
-    ],
-    "caption": "Лица после танца",
-    "place": null,
-    "visible": true,
-    "collection": "after",
-    "category_labels": [
-      "people"
-    ],
-    "category": "people",
-    "source": "media/archive-094-web-v2.mp4"
   },
   {
     "duration": 31.805,
@@ -1308,170 +630,6 @@
     "source": "media/archive-096-web-v2.mp4"
   },
   {
-    "height": 3520,
-    "id": "archive-097",
-    "poster": "media/archive-097.jpg",
-    "type": "image",
-    "width": 1980,
-    "web_source": "media/archive-097.jpg",
-    "categories": [
-      "people"
-    ],
-    "caption": "Чай у моря",
-    "place": "Гоа",
-    "visible": true,
-    "collection": "goa",
-    "category_labels": [
-      "people"
-    ],
-    "category": "people",
-    "source": "media/archive-097.jpg"
-  },
-  {
-    "height": 5924,
-    "id": "archive-098",
-    "poster": "media/archive-098.jpg",
-    "type": "image",
-    "width": 4442,
-    "web_source": "media/archive-098.jpg",
-    "categories": [
-      "atmosphere"
-    ],
-    "caption": "Собраться в круг",
-    "place": "Гоа",
-    "visible": true,
-    "collection": "goa",
-    "category_labels": [
-      "atmosphere"
-    ],
-    "category": "atmosphere",
-    "source": "media/archive-098.jpg"
-  },
-  {
-    "duration": 12.731666666666667,
-    "height": 562,
-    "id": "archive-099",
-    "poster": "media/archive-099.jpg",
-    "type": "video",
-    "web_source": "media/archive-099-web-v2.mp4",
-    "width": 1000,
-    "categories": [
-      "places"
-    ],
-    "caption": "Вместе к морю",
-    "place": "Гоа",
-    "visible": true,
-    "collection": "goa",
-    "category_labels": [
-      "places"
-    ],
-    "category": "places",
-    "source": "media/archive-099-web-v2.mp4"
-  },
-  {
-    "height": 8064,
-    "id": "archive-100",
-    "poster": "media/archive-100.jpg",
-    "type": "image",
-    "width": 6048,
-    "web_source": "media/archive-100.jpg",
-    "categories": [
-      "atmosphere"
-    ],
-    "caption": "Чашки по кругу",
-    "place": "Гоа",
-    "visible": true,
-    "collection": "goa",
-    "category_labels": [
-      "atmosphere"
-    ],
-    "category": "atmosphere",
-    "source": "media/archive-100.jpg"
-  },
-  {
-    "height": 8064,
-    "id": "archive-101",
-    "poster": "media/archive-101.jpg",
-    "type": "image",
-    "width": 6048,
-    "web_source": "media/archive-101.jpg",
-    "categories": [
-      "people"
-    ],
-    "caption": "Разговоры за общим столом",
-    "place": "Гоа",
-    "visible": true,
-    "collection": "goa",
-    "category_labels": [
-      "people"
-    ],
-    "category": "people",
-    "source": "media/archive-101.jpg"
-  },
-  {
-    "duration": 5.601666666666667,
-    "height": 562,
-    "id": "archive-102",
-    "poster": "media/archive-102.jpg",
-    "type": "video",
-    "web_source": "media/archive-102-web-v2.mp4",
-    "width": 1000,
-    "categories": [
-      "movement"
-    ],
-    "caption": "Танцевать до заката",
-    "place": "Гоа",
-    "visible": true,
-    "collection": "goa",
-    "category_labels": [
-      "movement"
-    ],
-    "category": "movement",
-    "source": "media/archive-102-web-v2.mp4"
-  },
-  {
-    "duration": 18.023333333333333,
-    "height": 562,
-    "id": "archive-103",
-    "poster": "media/archive-103.jpg",
-    "type": "video",
-    "web_source": "media/archive-103-web-v2.mp4",
-    "width": 1000,
-    "categories": [
-      "people"
-    ],
-    "caption": "Обернуться к своим",
-    "place": "Гоа",
-    "visible": true,
-    "collection": "goa",
-    "category_labels": [
-      "people"
-    ],
-    "category": "people",
-    "source": "media/archive-103-web-v2.mp4"
-  },
-  {
-    "duration": 56.44166666666667,
-    "height": 1000,
-    "id": "archive-104",
-    "poster": "media/archive-104.jpg",
-    "type": "video",
-    "web_source": "media/archive-104-web-v2.mp4",
-    "width": 562,
-    "categories": [
-      "people"
-    ],
-    "caption": "И ещё одно объятие",
-    "place": "Гоа",
-    "visible": true,
-    "collection": "goa",
-    "category_labels": [
-      "people"
-    ],
-    "category": "people",
-    "source": "media/archive-104-web-v2.mp4"
-  },
-  {
     "height": 854,
     "id": "archive-105",
     "poster": "media/archive-105.jpg",
@@ -1490,46 +648,6 @@
     ],
     "category": "people",
     "source": "media/archive-105.jpg"
-  },
-  {
-    "height": 3456,
-    "id": "archive-106",
-    "poster": "media/archive-106.jpg",
-    "type": "image",
-    "width": 4608,
-    "web_source": "media/archive-106.jpg",
-    "categories": [
-      "atmosphere"
-    ],
-    "caption": "Венки своими руками",
-    "place": null,
-    "visible": true,
-    "collection": "ritual",
-    "category_labels": [
-      "atmosphere"
-    ],
-    "category": "atmosphere",
-    "source": "media/archive-106.jpg"
-  },
-  {
-    "height": 4608,
-    "id": "archive-107",
-    "poster": "media/archive-107.jpg",
-    "type": "image",
-    "width": 3456,
-    "web_source": "media/archive-107.jpg",
-    "categories": [
-      "atmosphere"
-    ],
-    "caption": "Подарок от сердца",
-    "place": null,
-    "visible": true,
-    "collection": "ritual",
-    "category_labels": [
-      "atmosphere"
-    ],
-    "category": "atmosphere",
-    "source": "media/archive-107.jpg"
   },
   {
     "height": 2048,
@@ -1552,66 +670,6 @@
     "source": "media/archive-108.jpg"
   },
   {
-    "height": 4032,
-    "id": "archive-109",
-    "poster": "media/archive-109.jpg",
-    "type": "image",
-    "width": 3024,
-    "web_source": "media/archive-109.jpg",
-    "categories": [
-      "atmosphere"
-    ],
-    "caption": "Свечи, маленькие сокровища и наш круг",
-    "place": null,
-    "visible": true,
-    "collection": "ritual",
-    "category_labels": [
-      "atmosphere"
-    ],
-    "category": "atmosphere",
-    "source": "media/archive-109.jpg"
-  },
-  {
-    "height": 1280,
-    "id": "archive-110",
-    "poster": "media/archive-110.jpg",
-    "type": "image",
-    "width": 853,
-    "web_source": "media/archive-110.jpg",
-    "categories": [
-      "people"
-    ],
-    "caption": "Вот так выглядит близость",
-    "place": null,
-    "visible": true,
-    "collection": "film",
-    "category_labels": [
-      "people"
-    ],
-    "category": "people",
-    "source": "media/archive-110.jpg"
-  },
-  {
-    "height": 1280,
-    "id": "archive-111",
-    "poster": "media/archive-111.jpg",
-    "type": "image",
-    "width": 849,
-    "web_source": "media/archive-111.jpg",
-    "categories": [
-      "people"
-    ],
-    "caption": "Загадывай",
-    "place": null,
-    "visible": true,
-    "collection": "film",
-    "category_labels": [
-      "people"
-    ],
-    "category": "people",
-    "source": "media/archive-111.jpg"
-  },
-  {
     "duration": 33.96666666666667,
     "height": 848,
     "id": "archive-065",
@@ -1625,30 +683,12 @@
     "caption": "Разговор за столом у окна",
     "place": "Петербург",
     "visible": true,
+    "collection": "film",
     "category_labels": [
       "атмосфера"
     ],
     "category": "atmosphere",
     "source": "media/archive-065-original.mp4"
-  },
-  {
-    "height": 320,
-    "id": "archive-066",
-    "poster": "media/archive-066.jpg",
-    "type": "image",
-    "width": 175,
-    "web_source": "media/archive-066.jpg",
-    "categories": [
-      "atmosphere"
-    ],
-    "caption": "Разговор за столом у окна",
-    "place": "Петербург",
-    "visible": false,
-    "category_labels": [
-      "атмосфера"
-    ],
-    "category": "atmosphere",
-    "source": "media/archive-066.jpg"
   },
   {
     "duration": 7.466666666666667,
@@ -1664,108 +704,12 @@
     "caption": "Практика на полу в светлом зале",
     "place": null,
     "visible": true,
+    "collection": "film",
     "category_labels": [
       "движение"
     ],
     "category": "movement",
     "source": "media/archive-067-original.mp4"
-  },
-  {
-    "height": 320,
-    "id": "archive-068",
-    "poster": "media/archive-068.jpg",
-    "type": "image",
-    "width": 175,
-    "web_source": "media/archive-068.jpg",
-    "categories": [
-      "movement"
-    ],
-    "caption": "Практика на полу в светлом зале",
-    "place": null,
-    "visible": false,
-    "category_labels": [
-      "движение"
-    ],
-    "category": "movement",
-    "source": "media/archive-068.jpg"
-  },
-  {
-    "duration": 13.466666666666667,
-    "height": 464,
-    "id": "archive-069",
-    "poster": "media/archive-069.jpg",
-    "type": "video",
-    "web_source": "media/archive-069-original.mp4",
-    "width": 848,
-    "categories": [
-      "movement"
-    ],
-    "caption": "Босиком в общем танце",
-    "place": null,
-    "visible": true,
-    "category_labels": [
-      "движение"
-    ],
-    "category": "movement",
-    "source": "media/archive-069-original.mp4"
-  },
-  {
-    "height": 175,
-    "id": "archive-070",
-    "poster": "media/archive-070.jpg",
-    "type": "image",
-    "width": 320,
-    "web_source": "media/archive-070.jpg",
-    "categories": [
-      "movement"
-    ],
-    "caption": "Босиком в общем танце",
-    "place": null,
-    "visible": false,
-    "category_labels": [
-      "движение"
-    ],
-    "category": "movement",
-    "source": "media/archive-070.jpg"
-  },
-  {
-    "duration": 14,
-    "height": 848,
-    "id": "archive-071",
-    "poster": "media/archive-071.jpg",
-    "type": "video",
-    "web_source": "media/archive-071-original.mp4",
-    "width": 464,
-    "categories": [
-      "movement"
-    ],
-    "caption": "Вместе двигаться по залу",
-    "place": null,
-    "visible": true,
-    "category_labels": [
-      "движение"
-    ],
-    "category": "movement",
-    "source": "media/archive-071-original.mp4"
-  },
-  {
-    "height": 320,
-    "id": "archive-072",
-    "poster": "media/archive-072.jpg",
-    "type": "image",
-    "width": 175,
-    "web_source": "media/archive-072.jpg",
-    "categories": [
-      "movement"
-    ],
-    "caption": "Вместе двигаться по залу",
-    "place": null,
-    "visible": false,
-    "category_labels": [
-      "движение"
-    ],
-    "category": "movement",
-    "source": "media/archive-072.jpg"
   },
   {
     "duration": 18.566666666666666,
@@ -1781,30 +725,12 @@
     "caption": "«Когда-нибудь я сниму фильм о своей жизни»",
     "place": "Петербург",
     "visible": true,
+    "collection": "inside",
     "category_labels": [
       "люди"
     ],
     "category": "people",
     "source": "media/archive-073-original.mp4"
-  },
-  {
-    "height": 320,
-    "id": "archive-074",
-    "poster": "media/archive-074.jpg",
-    "type": "image",
-    "width": 175,
-    "web_source": "media/archive-074.jpg",
-    "categories": [
-      "people"
-    ],
-    "caption": "«Когда-нибудь я сниму фильм о своей жизни»",
-    "place": "Петербург",
-    "visible": false,
-    "category_labels": [
-      "люди"
-    ],
-    "category": "people",
-    "source": "media/archive-074.jpg"
   },
   {
     "duration": 8.8,
@@ -1820,69 +746,12 @@
     "caption": "«Просто постоять вместе на голове»",
     "place": null,
     "visible": true,
+    "collection": "film",
     "category_labels": [
       "смешные моменты"
     ],
     "category": "funny",
     "source": "media/archive-075-original.mp4"
-  },
-  {
-    "height": 320,
-    "id": "archive-076",
-    "poster": "media/archive-076.jpg",
-    "type": "image",
-    "width": 175,
-    "web_source": "media/archive-076.jpg",
-    "categories": [
-      "funny"
-    ],
-    "caption": "«Просто постоять вместе на голове»",
-    "place": null,
-    "visible": false,
-    "category_labels": [
-      "смешные моменты"
-    ],
-    "category": "funny",
-    "source": "media/archive-076.jpg"
-  },
-  {
-    "duration": 17.5,
-    "height": 848,
-    "id": "archive-077",
-    "poster": "media/archive-077.jpg",
-    "type": "video",
-    "web_source": "media/archive-077-original.mp4",
-    "width": 464,
-    "categories": [
-      "movement"
-    ],
-    "caption": "Партнёрский танец под куполом",
-    "place": "Вишенки",
-    "visible": true,
-    "category_labels": [
-      "движение"
-    ],
-    "category": "movement",
-    "source": "media/archive-077-original.mp4"
-  },
-  {
-    "height": 320,
-    "id": "archive-078",
-    "poster": "media/archive-078.jpg",
-    "type": "image",
-    "width": 175,
-    "web_source": "media/archive-078.jpg",
-    "categories": [
-      "movement"
-    ],
-    "caption": "Партнёрский танец под куполом",
-    "place": "Вишенки",
-    "visible": false,
-    "category_labels": [
-      "движение"
-    ],
-    "category": "movement",
-    "source": "media/archive-078.jpg"
   },
   {
     "duration": 9.966666666666667,
@@ -1898,108 +767,12 @@
     "caption": "Куча мала в зале",
     "place": "Вишенки",
     "visible": true,
+    "collection": "film",
     "category_labels": [
       "смешные моменты"
     ],
     "category": "funny",
     "source": "media/archive-079-original.mp4"
-  },
-  {
-    "height": 320,
-    "id": "archive-080",
-    "poster": "media/archive-080.jpg",
-    "type": "image",
-    "width": 175,
-    "web_source": "media/archive-080.jpg",
-    "categories": [
-      "funny"
-    ],
-    "caption": "Куча мала в зале",
-    "place": "Вишенки",
-    "visible": false,
-    "category_labels": [
-      "смешные моменты"
-    ],
-    "category": "funny",
-    "source": "media/archive-080.jpg"
-  },
-  {
-    "duration": 14.833333333333334,
-    "height": 848,
-    "id": "archive-081",
-    "poster": "media/archive-081.jpg",
-    "type": "video",
-    "web_source": "media/archive-081-original.mp4",
-    "width": 464,
-    "categories": [
-      "movement"
-    ],
-    "caption": "Перевернуть привычный ракурс",
-    "place": "Вишенки",
-    "visible": true,
-    "category_labels": [
-      "движение"
-    ],
-    "category": "movement",
-    "source": "media/archive-081-original.mp4"
-  },
-  {
-    "height": 320,
-    "id": "archive-082",
-    "poster": "media/archive-082.jpg",
-    "type": "image",
-    "width": 175,
-    "web_source": "media/archive-082.jpg",
-    "categories": [
-      "movement"
-    ],
-    "caption": "Перевернуть привычный ракурс",
-    "place": "Вишенки",
-    "visible": false,
-    "category_labels": [
-      "движение"
-    ],
-    "category": "movement",
-    "source": "media/archive-082.jpg"
-  },
-  {
-    "duration": 8.966666666666667,
-    "height": 848,
-    "id": "archive-083",
-    "poster": "media/archive-083.jpg",
-    "type": "video",
-    "web_source": "media/archive-083-original.mp4",
-    "width": 464,
-    "categories": [
-      "people"
-    ],
-    "caption": "Круг на полу",
-    "place": "Вишенки",
-    "visible": true,
-    "category_labels": [
-      "люди"
-    ],
-    "category": "people",
-    "source": "media/archive-083-original.mp4"
-  },
-  {
-    "height": 320,
-    "id": "archive-084",
-    "poster": "media/archive-084.jpg",
-    "type": "image",
-    "width": 175,
-    "web_source": "media/archive-084.jpg",
-    "categories": [
-      "people"
-    ],
-    "caption": "Круг на полу",
-    "place": "Вишенки",
-    "visible": false,
-    "category_labels": [
-      "люди"
-    ],
-    "category": "people",
-    "source": "media/archive-084.jpg"
   },
   {
     "duration": 5.133333333333334,
@@ -2015,146 +788,11 @@
     "caption": "Танец на траве",
     "place": "Вишенки",
     "visible": true,
+    "collection": "film",
     "category_labels": [
       "движение"
     ],
     "category": "movement",
     "source": "media/archive-085-original.mp4"
-  },
-  {
-    "height": 320,
-    "id": "archive-086",
-    "poster": "media/archive-086.jpg",
-    "type": "image",
-    "width": 175,
-    "web_source": "media/archive-086.jpg",
-    "categories": [
-      "movement"
-    ],
-    "caption": "Танец на траве",
-    "place": "Вишенки",
-    "visible": false,
-    "category_labels": [
-      "движение"
-    ],
-    "category": "movement",
-    "source": "media/archive-086.jpg"
-  },
-  {
-    "duration": 16.633333333333333,
-    "height": 848,
-    "id": "archive-087",
-    "poster": "media/archive-087.jpg",
-    "type": "video",
-    "web_source": "media/archive-087-original.mp4",
-    "width": 464,
-    "categories": [
-      "movement"
-    ],
-    "caption": "Общий круг в светлом зале",
-    "place": null,
-    "visible": true,
-    "category_labels": [
-      "движение"
-    ],
-    "category": "movement",
-    "source": "media/archive-087-original.mp4"
-  },
-  {
-    "height": 320,
-    "id": "archive-088",
-    "poster": "media/archive-088.jpg",
-    "type": "image",
-    "width": 175,
-    "web_source": "media/archive-088.jpg",
-    "categories": [
-      "movement"
-    ],
-    "caption": "Общий круг в светлом зале",
-    "place": null,
-    "visible": false,
-    "category_labels": [
-      "движение"
-    ],
-    "category": "movement",
-    "source": "media/archive-088.jpg"
-  },
-  {
-    "duration": 15.466666666666667,
-    "height": 848,
-    "id": "archive-089",
-    "poster": "media/archive-089.jpg",
-    "type": "video",
-    "web_source": "media/archive-089-original.mp4",
-    "width": 464,
-    "categories": [
-      "movement"
-    ],
-    "caption": "Каждая движется по-своему",
-    "place": null,
-    "visible": true,
-    "category_labels": [
-      "движение"
-    ],
-    "category": "movement",
-    "source": "media/archive-089-original.mp4"
-  },
-  {
-    "height": 320,
-    "id": "archive-090",
-    "poster": "media/archive-090.jpg",
-    "type": "image",
-    "width": 175,
-    "web_source": "media/archive-090.jpg",
-    "categories": [
-      "movement"
-    ],
-    "caption": "Каждая движется по-своему",
-    "place": null,
-    "visible": false,
-    "category_labels": [
-      "движение"
-    ],
-    "category": "movement",
-    "source": "media/archive-090.jpg"
-  },
-  {
-    "duration": 9.866666666666667,
-    "height": 848,
-    "id": "archive-091",
-    "poster": "media/archive-091.jpg",
-    "type": "video",
-    "web_source": "media/archive-091-original.mp4",
-    "width": 464,
-    "categories": [
-      "movement"
-    ],
-    "caption": "Импровизация на полу",
-    "place": null,
-    "visible": true,
-    "category_labels": [
-      "движение"
-    ],
-    "category": "movement",
-    "source": "media/archive-091-original.mp4"
-  },
-  {
-    "height": 320,
-    "id": "archive-092",
-    "poster": "media/archive-092.jpg",
-    "type": "image",
-    "width": 175,
-    "web_source": "media/archive-092.jpg",
-    "categories": [
-      "movement"
-    ],
-    "caption": "Импровизация на полу",
-    "place": null,
-    "visible": false,
-    "category_labels": [
-      "движение"
-    ],
-    "category": "movement",
-    "source": "media/archive-092.jpg"
   }
 ]

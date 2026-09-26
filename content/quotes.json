@@ -130,19 +130,6 @@
     "section": "permissions"
   },
   {
-    "id": "quotes-024",
-    "author": "Anastasia Z.",
-    "themes": [
-      "изменения"
-    ],
-    "excerpt": "Этот финик!!!! Съела его с огромным кайфом.",
-    "featured": true,
-    "review": "editorial_selection",
-    "quote": "Этот финик!!!! Съела его с огромным кайфом.",
-    "theme": "изменения",
-    "section": "permissions"
-  },
-  {
     "id": "quotes-025",
     "author": "Анна Pro",
     "themes": [
@@ -169,19 +156,6 @@
     "section": "permissions"
   },
   {
-    "id": "quotes-030",
-    "author": null,
-    "themes": [
-      "игра и детство"
-    ],
-    "excerpt": "Ситуация: у меня теперь есть алтарь Телозамеса…",
-    "featured": true,
-    "review": "editorial_selection",
-    "quote": "Ситуация: у меня теперь есть алтарь Телозамеса…",
-    "theme": "игра и детство",
-    "section": "inside"
-  },
-  {
     "id": "quotes-031",
     "author": "Daria T.",
     "themes": [
@@ -192,19 +166,6 @@
     "review": "editorial_selection",
     "quote": "Я много где бывала, но нигде не видела концентрацию таких тёплых людей.",
     "theme": "люди и сообщество",
-    "section": "permissions"
-  },
-  {
-    "id": "quotes-032",
-    "author": null,
-    "themes": [
-      "игра и детство"
-    ],
-    "excerpt": "Спасибо за такие подарки, они очень летние, наивные и такие, что хочется улыбаться, это же так круто дарить людям повод для улыбки.",
-    "featured": true,
-    "review": "editorial_selection",
-    "quote": "Спасибо за такие подарки, они очень летние, наивные и такие, что хочется улыбаться, это же так круто дарить людям повод для улыбки.",
-    "theme": "игра и детство",
     "section": "permissions"
   },
   {
@@ -270,6 +231,32 @@
     "review": "editorial_selection",
     "quote": "Как говорили классики: shake your booty и пусть весь мир подождёт.",
     "theme": "игра и детство",
+    "section": "permissions"
+  },
+  {
+    "id": "notes-001",
+    "author": "Катя С.",
+    "themes": [
+      "встреча с собой"
+    ],
+    "excerpt": "Про честность перед собой и перед теми, кто двигается рядом.",
+    "featured": true,
+    "review": "editorial_review",
+    "quote": "Про честность перед собой и перед теми, кто двигается рядом.",
+    "theme": "встреча с собой",
+    "section": "permissions"
+  },
+  {
+    "id": "notes-002",
+    "author": "Диана З.",
+    "themes": [
+      "свобода тела"
+    ],
+    "excerpt": "Чувствовать всё, что внутри: каждую клетку, мышцы, движение крови, биение сердца, а ещё чувствовать мысли… и танцевать.",
+    "featured": true,
+    "review": "editorial_review",
+    "quote": "Чувствовать всё, что внутри: каждую клетку, мышцы, движение крови, биение сердца, а ещё чувствовать мысли… и танцевать.",
+    "theme": "свобода тела",
     "section": "permissions"
   }
 ]
