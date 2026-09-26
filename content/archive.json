@@ -21,27 +21,6 @@
     "source": "media/archive-001-web-v2.mp4"
   },
   {
-    "duration": 12.233333333333333,
-    "height": 562,
-    "id": "archive-005",
-    "poster": "media/archive-005.jpg",
-    "type": "video",
-    "web_source": "media/archive-005-original.mp4",
-    "width": 1000,
-    "categories": [
-      "movement"
-    ],
-    "caption": "Движение у воды",
-    "place": null,
-    "visible": true,
-    "collection": "film",
-    "category_labels": [
-      "движение"
-    ],
-    "category": "movement",
-    "source": "media/archive-005-original.mp4"
-  },
-  {
     "duration": 13.2,
     "height": 1000,
     "id": "archive-007",
@@ -366,26 +345,6 @@
     ],
     "category": "people",
     "source": "media/archive-021.jpg"
-  },
-  {
-    "height": 2560,
-    "id": "archive-027",
-    "poster": "media/archive-027.jpg",
-    "type": "image",
-    "width": 1920,
-    "web_source": "media/archive-027.jpg",
-    "categories": [
-      "people"
-    ],
-    "caption": "Общее фото в зале",
-    "place": null,
-    "visible": true,
-    "collection": "film",
-    "category_labels": [
-      "люди"
-    ],
-    "category": "people",
-    "source": "media/archive-027.jpg"
   },
   {
     "height": 2560,
