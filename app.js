@@ -60,7 +60,7 @@
  const first=D.content.sections[0], early=first.media||[];
  const portrait=D.content.portrait;
  if(portrait){
-  $('#hero-media').innerHTML=`<img class="hero-photo portrait-photo" src="${url(portrait.poster)}" alt="Настя" width="620" height="775" fetchpriority="high">`;
+  $('#hero-media').innerHTML=`<span class="motion-trace trace-one" aria-hidden="true"></span><span class="motion-trace trace-two" aria-hidden="true"></span><img class="hero-photo portrait-photo" src="${url(portrait.poster)}" alt="Настя" width="620" height="775" fetchpriority="high">`;
   $('.handwritten').innerHTML='Узнаёшь себя?';
  }else{
   $('#hero-media').innerHTML=`<div class="movement-object" aria-hidden="true"><div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div><span class="movement-star">${starMarkup}</span></div>`;
@@ -75,19 +75,34 @@
  if(dances.length){$('#dance-memory').hidden=false;memoryCards('#dance-clips',dances,{captions:false,title:'Танец Насти'});}
  const collection=name=>D.archive.filter(a=>a.visible&&a.collection===name);
  memoryCards('#after-clips',collection('after'));
- memoryCards('#goa-gallery',collection('goa').sort((a,b)=>(a.id==='archive-096'?-1:0)-(b.id==='archive-096'?-1:0)));
+ memoryCards('#goa-gallery',collection('goa').sort((a,b)=>(a.id==='archive-102'?-1:0)-(b.id==='archive-102'?-1:0)),{featureFirst:true});
  function duration(n){return `${Math.floor(n/60)}:${String(Math.floor(n%60)).padStart(2,'0')}`;}
- $('#circles').innerHTML=D.people.map((p,i)=>`<article class="person"><button class="circle" data-person="${esc(p.id)}" aria-label="Слушать: ${esc(p.name)}${p.part?', часть '+p.part:''}"><img src="${url(p.poster)}" alt="${esc(p.name)}" loading="lazy" width="240" height="240"><video muted loop playsinline preload="none" data-preview="${i}" tabindex="-1" aria-hidden="true"></video><span class="circle-play" aria-hidden="true">▶</span></button><span class="person-name">${esc(p.name)}</span><span class="person-meta">${p.part?'Часть '+p.part+' · ':''}${duration(p.duration)}</span></article>`).join('');
- const previews=$$('[data-preview]');let activePreviews=0;
- async function preview(v){
-  if(reduced.matches||navigator.connection?.saveData||matchMedia('(pointer: coarse)').matches||viewer.open||document.hidden||activePreviews>=2||previews.filter(p=>!p.paused).length>=2||!v.paused)return;
-  const p=D.people[Number(v.dataset.preview)];if(!v.getAttribute('src'))v.src=url(p.web_source||p.source);
-  v.muted=true;activePreviews++;try{await v.play();}catch{}finally{activePreviews=Math.max(0,activePreviews-1);}
+ $('#circles').innerHTML=D.people.map((p,i)=>`<article class="person"><button class="circle" data-person="${esc(p.id)}" aria-label="Слушать: ${esc(p.name)}${p.part?', часть '+p.part:''}"><img src="${url(p.face_poster||p.poster)}" alt="${esc(p.name)}" loading="lazy" width="240" height="240"><video muted loop playsinline preload="none" data-preview="${i}" tabindex="-1" aria-hidden="true"></video><span class="circle-play" aria-hidden="true">▶</span></button><span class="person-name">${esc(p.name)}</span><span class="person-meta">${p.part?'Часть '+p.part+' · ':''}${duration(p.duration)}</span></article>`).join('');
+ const previews=$$('[data-preview]'),visiblePreviews=new Set();
+ let desiredPreviews=new Set();
+ function syncPreviews(){
+  const limit=matchMedia('(max-width: 600px)').matches?2:3;
+  const eligible=!reduced.matches&&!navigator.connection?.saveData&&!viewer.open&&!document.hidden;
+  const selected=eligible?previews.filter(v=>visiblePreviews.has(v)).slice(0,limit):[];
+  desiredPreviews=new Set(selected);
+  previews.filter(v=>!selected.includes(v)).forEach(v=>{v.pause();v.classList.remove('is-playing');});
+  selected.forEach(async v=>{
+   if(!v.paused)return;
+   const p=D.people[Number(v.dataset.preview)];
+   if(!v.getAttribute('src'))v.src=url(p.web_source||p.source);
+   v.muted=true;v.playsInline=true;
+   try{await v.play();if(!desiredPreviews.has(v)||viewer.open||document.hidden||reduced.matches){v.pause();return;}if(!v.paused)v.classList.add('is-playing');}catch{v.classList.remove('is-playing');}
+  });
  }
- const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{const v=e.target;if(!e.isIntersecting)v.pause();else if(Number(v.dataset.preview)<2)preview(v);});},{threshold:.7});
- previews.forEach(v=>observer.observe(v));
- $$('[data-person]').forEach(b=>{const p=D.people.find(p=>p.id===b.dataset.person);b.onclick=()=>open(p,p.name+(p.part?' · часть '+p.part:''));b.addEventListener('pointerenter',()=>preview(b.querySelector('video')));b.addEventListener('pointerleave',()=>b.querySelector('video').pause());});
- reduced.addEventListener('change',()=>{if(reduced.matches)previews.forEach(v=>v.pause());});
+ const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)visiblePreviews.add(e.target);else visiblePreviews.delete(e.target);});syncPreviews();},{threshold:.65});
+ previews.forEach(v=>{observer.observe(v);v.addEventListener('pause',()=>v.classList.remove('is-playing'));});
+ $$('[data-person]').forEach(b=>{const p=D.people.find(p=>p.id===b.dataset.person);b.onclick=()=>open(p,p.name+(p.part?' · часть '+p.part:''));});
+ reduced.addEventListener('change',syncPreviews);
+ document.addEventListener('visibilitychange',syncPreviews);
+ viewer.addEventListener('close',syncPreviews);
+ window.addEventListener('resize',syncPreviews);
+ $('#final-faces').innerHTML=D.people.map(p=>`<button class="final-face" data-final-person="${esc(p.id)}" aria-label="Слушать: ${esc(p.name)}"><img src="${url(p.face_poster||p.poster)}" alt="${esc(p.name)}" loading="lazy" width="180" height="180"></button>`).join('');
+ $$('[data-final-person]').forEach(b=>{const p=D.people.find(p=>p.id===b.dataset.finalPerson);b.onclick=()=>open(p,p.name);});
  let selectedTheme='Все',expanded=false;
  const topics=['Все',...D.content.sections.find(s=>s.id==='permissions').themes];
  const order=D.content.quote_order||[];

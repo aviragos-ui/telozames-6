@@ -126,47 +126,6 @@
     "source": "media/archive-015-web-v2.mp4"
   },
   {
-    "duration": 9.033333333333333,
-    "height": 848,
-    "id": "archive-112",
-    "poster": "media/archive-112.jpg",
-    "type": "video",
-    "web_source": "media/archive-112-original.mp4",
-    "width": 464,
-    "categories": [
-      "movement"
-    ],
-    "caption": "Танец вдвоём",
-    "place": "Гоа",
-    "visible": true,
-    "collection": "goa",
-    "category_labels": [
-      "movement"
-    ],
-    "category": "movement",
-    "source": "media/archive-112-original.mp4"
-  },
-  {
-    "height": 1280,
-    "id": "archive-113",
-    "poster": "media/archive-113.jpg",
-    "type": "image",
-    "width": 960,
-    "web_source": "media/archive-113.jpg",
-    "categories": [
-      "people"
-    ],
-    "caption": "Рядом",
-    "place": "Гоа",
-    "visible": true,
-    "collection": "goa",
-    "category_labels": [
-      "people"
-    ],
-    "category": "people",
-    "source": "media/archive-113.jpg"
-  },
-  {
     "height": 808,
     "id": "archive-114",
     "poster": "media/archive-114.jpg",
@@ -305,6 +264,68 @@
     ],
     "category": "atmosphere",
     "source": "media/archive-120.jpg"
+  },
+  {
+    "duration": 29.9,
+    "height": 562,
+    "id": "archive-121",
+    "poster": "media/archive-121.jpg",
+    "type": "video",
+    "web_source": "media/archive-121-web-v2.mp4",
+    "width": 1000,
+    "categories": [
+      "atmosphere"
+    ],
+    "caption": "Вечеринка",
+    "place": "Гоа",
+    "visible": true,
+    "collection": "goa",
+    "category_labels": [
+      "атмосфера"
+    ],
+    "category": "atmosphere",
+    "source": "media/archive-121-web-v2.mp4"
+  },
+  {
+    "height": 5620,
+    "id": "archive-122",
+    "poster": "media/archive-122.jpg",
+    "type": "image",
+    "width": 4216,
+    "web_source": "media/archive-122.jpg",
+    "categories": [
+      "atmosphere"
+    ],
+    "caption": "Банька. Вода и лепестки",
+    "place": "Гоа",
+    "visible": true,
+    "collection": "goa",
+    "category_labels": [
+      "атмосфера"
+    ],
+    "category": "atmosphere",
+    "source": "media/archive-122.jpg"
+  },
+  {
+    "duration": 26.395,
+    "height": 1000,
+    "id": "archive-123",
+    "poster": "media/archive-123.jpg",
+    "type": "video",
+    "web_source": "media/archive-123-web-v2.mp4",
+    "width": 562,
+    "categories": [
+      "atmosphere"
+    ],
+    "caption": "Чай, неспешно",
+    "place": "Гоа",
+    "visible": true,
+    "collection": "goa",
+    "category_labels": [
+      "атмосфера"
+    ],
+    "category": "atmosphere",
+    "source": "media/archive-123-web-v2.mp4"
   },
   {
     "height": 1280,
@@ -619,7 +640,7 @@
     "categories": [
       "movement"
     ],
-    "caption": "Утро. Пальмы. Движение",
+    "caption": "Танцы под пальмами",
     "place": "Гоа",
     "visible": true,
     "collection": "goa",
@@ -628,6 +649,90 @@
     ],
     "category": "movement",
     "source": "media/archive-096-web-v2.mp4"
+  },
+  {
+    "duration": 12.731666666666667,
+    "height": 562,
+    "id": "archive-099",
+    "poster": "media/archive-099.jpg",
+    "type": "video",
+    "web_source": "media/archive-099-web-v2.mp4",
+    "width": 1000,
+    "categories": [
+      "places"
+    ],
+    "caption": "К морю",
+    "place": "Гоа",
+    "visible": true,
+    "collection": "goa",
+    "category_labels": [
+      "places"
+    ],
+    "category": "places",
+    "source": "media/archive-099-web-v2.mp4"
+  },
+  {
+    "duration": 5.601666666666667,
+    "height": 562,
+    "id": "archive-102",
+    "poster": "media/archive-102.jpg",
+    "type": "video",
+    "web_source": "media/archive-102-web-v2.mp4",
+    "width": 1000,
+    "categories": [
+      "movement"
+    ],
+    "caption": "Все вместе. На пляже",
+    "place": "Гоа",
+    "visible": true,
+    "collection": "goa",
+    "category_labels": [
+      "movement"
+    ],
+    "category": "movement",
+    "source": "media/archive-102-web-v2.mp4"
+  },
+  {
+    "duration": 18.023333333333333,
+    "height": 562,
+    "id": "archive-103",
+    "poster": "media/archive-103.jpg",
+    "type": "video",
+    "web_source": "media/archive-103-web-v2.mp4",
+    "width": 1000,
+    "categories": [
+      "people"
+    ],
+    "caption": "Побудем здесь ещё",
+    "place": "Гоа",
+    "visible": true,
+    "collection": "goa",
+    "category_labels": [
+      "people"
+    ],
+    "category": "people",
+    "source": "media/archive-103-web-v2.mp4"
+  },
+  {
+    "duration": 56.44166666666667,
+    "height": 1000,
+    "id": "archive-104",
+    "poster": "media/archive-104.jpg",
+    "type": "video",
+    "web_source": "media/archive-104-web-v2.mp4",
+    "width": 562,
+    "categories": [
+      "people"
+    ],
+    "caption": "Обниматься в море",
+    "place": "Гоа",
+    "visible": true,
+    "collection": "goa",
+    "category_labels": [
+      "people"
+    ],
+    "category": "people",
+    "source": "media/archive-104-web-v2.mp4"
   },
   {
     "height": 854,
